@@ -1,0 +1,54 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div id="page_content" class="static_pages home fadeIn animated top">
+    <div class="container login-content project-container">
+        <div ng-show="project">
+            <h1>Edit Project</h1>
+            <form id="edit-project-form" ng-submit="save()" accept-charset="UTF-8">
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input class="form-control" type="text" name="title" ng-model="project.title" required/>
+                </div>
+                <div class="form-group">
+                    <label>Project Description</label>
+                    <textarea class="form-control" name="description" ng-model="project.description" style="width: 100%; height: 241px;" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Project Website URL</label>
+                    <input class="form-control" type="url" name="website" ng-model="project.website"/>
+                </div>
+                <div class="form-group">
+                    <label>Project Repository URL</label>
+                    <input class="form-control" type="url" name="repo" ng-model="project.repo"/>
+                </div>
+                <div class="form-group">
+                    <label>Image URL (optional)</label>
+                    <input class="form-control" type="url" name="imageUrl" ng-model="project.imageUrl"/>
+                </div>
+                <div class="form-group project-content">
+                    <ng-include onload="project=project" src="'/showcase/partials/contributorsPicker.html'"></ng-include>
+                </div>
+                <div class="form-group">
+                    <a  ng-href="project/{{project._id}}">
+                        <div class="btn btn-lg btn-default">Cancel</div>
+                    </a>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" ng-disabled="submitting" value="Submit" class="btn btn-lg btn-primary sign-up" />
+                </div>
+            </form>
+        </div>
+
+        <h6 class="text-danger">{{error}}</h6>
+        <i ng-hide="project" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom spinner"></i>
+    </div>
+</div>
+<footer>
+    <div class="container">
+
+        <div class="row row-same-height">
+            <div class="space-footer-info">
+                <a href="/"><img src="../../images/cseslogo-300.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>

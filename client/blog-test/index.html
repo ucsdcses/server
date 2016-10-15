@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSES TECH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Computer Science Project Group at UCSD">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSES Tech_files/style.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href="./CSES Tech_files/css" rel="stylesheet" type="text/css">
+    <link href="./CSES Tech_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./CSES Tech_files/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+		<div class="row">
+			<div class="ten columns offset-by-one">
+
+<header class="main-blurb">
+  This is a simple blog template for CSES
+</header>
+
+
+
+<div class="post" role="main">
+  <div class="home">
+  <div class="posts">
+
+
+      <div class="post py2">
+        <p class="post-meta">Post:</p>
+        <h3 id="demo" class="h1 post-title"></h3>
+	  
+
+      </div>
+
+
+  </div>
+
+</div>
+
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://gitcdn.link/repo/maxwell-bland/remote-text-file-load-test/master/README.md", true);
+  xhttp.send();
+}
+loadDoc();
+</script>
+
+
+</body></html>

@@ -1,0 +1,65 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div class="fadeIn animated login-page">
+    <div class="modal modal-fullscreen fade white in" id="modal-link-fb" tabindex="-1" style="display:none;">
+        <div class="modal-dialog center-block">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <h4>Link your facebook for the best experience</h4>
+                    </div>
+                    <div class="row text-center">
+                        <button id="fb-button" class="btn btn-primary btn-large" ng-click="linkFb()">
+                            <i class="fa fa-facebook fa-pull-left fa-lg"></i> Link Facebook
+                        </button>
+                    </div>
+                    <div class="row text-center">
+                        <a class="text-info" href="home">Skip</a>
+                    </div>
+                    <div class="row text-center">
+                        <h5 class="text-danger">{{linkError}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row underline-links login-content">
+        <div class="col-sm-6 col-md-3 text-center">
+            <h1 class="login">Welcome!</h1>
+            <form class="new_user" id="register_form" ng-submit="register()" accept-charset="UTF-8">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input class="form-control" type="text" name="firstName" id="first_name" ng-model="firstName" required />
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input class="form-control" type="text" name="lastName" id="last_name" ng-model="lastName" required />
+                </div>
+                <div class="form-group">
+                    <label for="user_email">UCSD Email</label>
+                    <input class="form-control" type="text" name="email" id="user_email" ng-model="email" required />
+                    <h6 class="text-danger">{{emailError(email)}}</h6>
+                </div>
+                <div class="form-group">
+                    <label for="user_password">Password</label>
+                    <input class="form-control" type="password" name="password" id="user_password" ng-model="password" required />
+                    <h6 class="text-danger">{{passwordError(password)}}</h6>
+                </div>
+                <div class="form-group">
+                    <label for="github_profile">Github URL (optional)</label>
+                    <input class="form-control" type="text" name="github" id="github_profile" ng-model="github"/>
+                    <h6 class="text-danger">{{githubError(github)}}</h6>
+                </div>
+                <div class="form-group">
+                    <input type="submit" ng-disabled="submitting" id="register_button" name="commit" value="Sign up" class="btn btn-lg btn-default sign-up" />
+                </div>
+
+                <a href="login" class="right-pad">Already have an account?</a>
+            </form>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <h5 id="register_error" class="text-danger">{{error}}</h5>
+        </div>
+    </div>
+</div>

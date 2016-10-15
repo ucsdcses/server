@@ -1,0 +1,48 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div class="container login-content project-container">
+    <img ng-show="user.facebookId" class="top-elem" ng-src="http://graph.facebook.com/{{user.facebookId}}/picture?type=large">
+    <div ng-hide="user.facebookId||loading" class="placeholder-pic-lg top-elem">{{user.firstName.charAt(0)}}{{user.lastName.charAt(0)}}</div>
+    <form ng-submit="update()" accept-charset="UTF-8">
+        <div class="form-group">
+            <label>First Name</label>
+            <input class="form-control" ng-disabled="loading" type="text" name="firstName" ng-model="user.firstName" required/>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input class="form-control" ng-disabled="loading" type="text" name="lastName" ng-model="user.lastName" required/>
+        </div>
+        <div class="form-group">
+            <label>UCSD Email</label>
+            <input class="form-control" ng-disabled="loading" type="text" name="email" ng-model="user.email" required/>
+            <h6 class="text-danger">{{emailError(user.email)}}</h6>
+        </div>
+        <div class="form-group">
+            <label>Github URL</label>
+            <input class="form-control" ng-disabled="loading" type="text" name="github" ng-model="user.github"/>
+            <h6 class="text-danger">{{githubError(user.github)}}</h6>
+        </div>
+        <div class="form-group">
+            <input type="submit" ng-disabled="loading" name="update-profile" value="Update Profile" class="btn btn-lg btn-primary sign-up" />
+        </div>
+    </form>
+
+    <button id="unlink-fb" ng-show="user.facebookId" ng-disabled="loading" class="btn btn-primary btn-large" ng-click="unlink()">
+        <i class="fa fa-facebook fa-pull-left fa-lg"></i> Unlink Facebook
+    </button>
+
+    <button id="link-fb" ng-hide="user.facebookId" ng-disabled="loading" class="btn btn-primary btn-large" ng-click="link()">
+        <i class="fa fa-facebook fa-pull-left fa-lg"></i> Link Facebook
+    </button>
+
+    <h5 class="text-danger">{{error}}</h5>
+</div>
+<footer>
+    <div class="container">
+
+        <div class="row row-same-height">
+            <div class="space-footer-info">
+                <a href="/"><img src="../../images/cseslogo-300.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>

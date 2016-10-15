@@ -1,0 +1,59 @@
+<div ng-controller="navbarController">
+    <!-- TEMP -->
+    <nav class="navbar navbar-default navbar-fixed-top shrink" style="">
+        <div class="container" style="">
+            <div class="navbar-header" style="">
+                <a class="" href="home"><h2 class="brand"> UCSD Showcase </h2></a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav primary-nav navbar-right hidden-xs hidden-sm">
+                    <li id="submit-project-button" ng-show="isLoggedIn()">
+                        <a href="submit">Submit</a>
+                    </li>
+                    <li id="sign-up-button" ng-hide="isLoggedIn()">
+                        <a href="register">Sign up</a>
+                    </li>
+                    <li id="login-button" ng-hide="isLoggedIn()">
+                        <a href="login" class="">Login</a>
+                    </li>
+                    <li ng-show="isLoggedIn()">
+                        <a ng-href="profile">Profile</a>
+                    </li>
+                    <li id="logout-button" ng-show="isLoggedIn()">
+                        <a href="#" ng-click="logout()">Sign Out</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs-block visible-sm-block">
+                    <li><a data-toggle="modal" data-target="#modal-navigate" data-remote="true" href="#">☰</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- NAVIGRATION ON MOBILE -->
+    <div class="modal modal-fullscreen fade" data-backdrop-color="black" id="modal-navigate" tabindex="-1" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="large_close" data-dismiss="modal" href="file:///home/maxwell/CSE%20OSS/CSES.OSS.2/CSES%20OSS.html#">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mobile-nav-links text-center">
+                            <ul class="list-unstyled">
+                                <li id="mobile-signup" ng-hide="isLoggedIn()"><a href="register">Sign Up</a></li>
+                                <li id="mobile-login" ng-hide="isLoggedIn()"><a href="login">Log in</a></li>
+                                <li id="mobile-submit" ng-show="isLoggedIn()"><a href="submit">Submit</a></li>
+                                <li ng-show="isLoggedIn()"><a ng-href="profile">Profile</a></li>
+                                <li id="mobile-signout" ng-show="isLoggedIn()"><a href="#" data-dismiss="modal" ng-click="logout()">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

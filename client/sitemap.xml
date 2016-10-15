@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://cses.ucsd.edu/archives/</loc>
+  </url>
+  <url>
+    <loc>http://cses.ucsd.edu/</loc>
+  </url>
+  <url>
+    <loc>http://cses.ucsd.edu/404.html</loc>
+    <lastmod>2016-01-01T21:45:14-08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://cses.ucsd.edu/README.html</loc>
+    <lastmod>2016-01-13T15:55:53-08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://cses.ucsd.edu/cseday/index.html</loc>
+    <lastmod>2016-01-13T11:06:59-08:00</lastmod>
+  </url>
+</urlset>
