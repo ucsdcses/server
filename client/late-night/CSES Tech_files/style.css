@@ -258,7 +258,7 @@ blockquote footer { background-color: #fff; border-color: transparent; color: #7
 
 .post-link .post-title:hover { border-bottom: 5px solid #004BE0; }
 
-.meta, .post-meta { width: auto; font-weight: 300; margin: 0; padding: .25em 0; font-style: italic; }
+.meta, .post-meta { width: auto; font-weight: 300; margin: 0; padding: .25em 0; font-style: italic; color: lightgrey; }
 
 .related-post-title { border-bottom: thin solid #f3f3f3; }
 
