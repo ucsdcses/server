@@ -26,11 +26,16 @@ html, body {
 	align-items: center;
 }
 
-#banner > img {
+#cse_day_logo {
   height: 247px;
   width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  display: block;
+}
+
+#banner h1 {
+  width: 100%;
+  color: #D8D8D8;
 }
 
 #info {
@@ -119,4 +124,22 @@ html, body {
   margin: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+#sponsors img {
+  height: 75px;
+  margin: auto;
+  display: block;
+}
+
+#sponsors h2 {
+  width: 100%;
+}
+
+#sponsors {
+  background-color: #D8D8D8;
+}
+
+.top-buffer {
+  margin-top: 25px;
 }
