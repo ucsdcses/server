@@ -5,12 +5,6 @@ html, body {
   width: 100%;
 }
 
-@media (max-width: 380px) {
-  .schedule__event {
-    font-size: 0.85rem;
-  }
-}
-
 #banner {
   height: 60%;
   width: 100%;
@@ -36,6 +30,16 @@ html, body {
 #banner h1 {
   width: 100%;
   color: #D8D8D8;
+}
+
+@media (max-width: 380px) {
+  .schedule__event {
+    font-size: 0.85rem;
+  }
+
+  .text-center {
+    font-size: 1.1rem;
+  }
 }
 
 #info {
@@ -138,8 +142,20 @@ html, body {
 
 #sponsors {
   background-color: #D8D8D8;
+  padding: 50px;
 }
 
 .top-buffer {
   margin-top: 25px;
+}
+
+@media (max-width: 380px) {
+  #sponsors img {
+    height: 40px;
+    margin: 10px auto;
+  }
+
+  .top-buffer {
+    margin-top: 0px;
+  }
 }
