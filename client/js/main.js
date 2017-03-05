@@ -1,28 +1,28 @@
 $(document).on('ready', function() {
 
     /* Animate the site header */
-    var wrapper = $('.wrapper');
+    const wrapper = $('.wrapper');
     wrapper.animate({
         opacity: 1,
         marginTop: 0
     }, 700);
 
     // Cache selectors
-    var lastId;
-    var nav = $('.nav-right-collapse, .nav-right');
-    var navHeight = 60;
+    let lastId;
+    const nav = $('.nav-right-collapse, .nav-right');
+    const navHeight = 60;
     // all list items
-    var links = nav.find("a");
+    const links = nav.find('a');
     // anchors corresponding to menu items
-    var scrollLinks = links.map(function() {
-        var link = $($(this).attr("href"));
+    const scrollLinks = links.map(function() {
+        let link = $($(this).attr('href'));
         if (link.length) { return link; }
     });
 
     /* Easing scroll animation to the correct part of the page */
     links.on('click', function(e){
-        var href = $(this).attr("href");
-        var offsetTop = (href === "#") ? 0 : $(href).offset().top-navHeight+10;
+        const href = $(this).attr('href');
+        const offsetTop = (href === '#') ? 0 : $(href).offset().top-navHeight+10;
         $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 300);
@@ -31,7 +31,7 @@ $(document).on('ready', function() {
 
     /* Fix navbar to top */
     $(document).on('scroll', function() {
-        var scrollTop = $(document).scrollTop();
+        const scrollTop = $(document).scrollTop();
         if (scrollTop > 60) {
             $('nav').addClass('fixed');
         } else {
@@ -42,30 +42,32 @@ $(document).on('ready', function() {
     /* Highlight current nav item */
     $(document).on('scroll', function() {
         // Get container scroll position
-        var fromTop = $(this).scrollTop()+navHeight+25;
+        const fromTop = $(this).scrollTop()+navHeight+25;
 
         // Get id of current scroll item
-        var cur = scrollLinks.map(function() {
-            var linkTop = $(this).offset().top;
-            var sectionHeight = $(this).height();
-            // 2nd check is to unselect the last item if we keep scrolling past it. Give it leeway of 125 to account for padding
+        let cur = scrollLinks.map(function() {
+            let linkTop = $(this).offset().top;
+            let sectionHeight = $(this).height();
+            // 2nd check is to unselect the last item if 
+            // we keep scrolling past it. Give it leeway of 125 
+            // to account for padding
             if (linkTop < fromTop && fromTop < (linkTop + sectionHeight + 100)) {
                 return this;
             }
         });
         // Get the id of the current element
         cur = cur[cur.length-1];
-        var id = cur && cur.length ? cur[0].id : "";
+        const id = cur && cur.length ? cur[0].id : '';
         if (lastId !== id) {
             lastId = id;
             links.removeClass('active');
-            links.filter("[href=#"+id+"]").addClass('active');
+            links.filter('[href=#'+id+']').addClass('active');
         }
     });
 
     $('.contact-submit-btn').on('click', function() {
         $(this).submit();
-    })
+    });
 
     // esc hit - close form or close nav-collapse
     $(document).keyup(function(e) {

@@ -16,31 +16,31 @@ exports.labs = labsArray;
 var day = data.substring(0,3);
 
 if(day == 'Mon'){
-	day = 0;
+    day = 0;
 } else if(day == 'Tue'){
-	day = 1;
+    day = 1;
 } else if(day == 'Wed'){
-	day = 2;
+    day = 2;
 } else if(day == 'Thu'){
-	day = 3;
+    day = 3;
 } else if(day == 'Fri'){
-	day = 4;
+    day = 4;
 } else if(day == 'Sat'){
-	day = 5;
+    day = 5;
 } else if(day == 'Sun'){
-	day = 6;
+    day = 6;
 }
 
 var rawString = day + " " + data.substring(11,13)+" "+
-	data.substring(14,16)+"|"+
-	data.substring(72,114)+data.substring(115,157);
+data.substring(14,16)+"|"+
+data.substring(72,114)+data.substring(115,157);
 
 console.log(rawString);
 
 /*read in raw data file*/
 var rawData = fs.readFileSync("./rawData.txt", "utf8");
 var dataArray = rawData.split('\n');
-	
+
 /*write raw data file (only last two weeks)*/
 dataArray.push(rawString);
 /*remove first line*/

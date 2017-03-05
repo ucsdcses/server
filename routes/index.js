@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+const FB = require('fb');
 
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
@@ -129,7 +130,6 @@ router.post('/register', (req, res) => {
     registerUser();
   }
 });
-
 
 /**
  * /api/facebook/login

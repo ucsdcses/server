@@ -46,7 +46,7 @@ setTimeout(() => {
 
 gulp.task('serve', ['nodemon', 'vendor-bundle', 'bundle'], () => {
   browserSync.init({
-  proxy: "http://localhost:3000",
+  proxy: 'http://localhost:3000',
   files: [paths.publicFiles],
   notify: false,
   port: 5000
@@ -84,7 +84,8 @@ function bundle() {
     gutil.log(gutil.colors.red(err.toString()));
 })
 .on('end', () => {
-    gutil.log(gutil.colors.green(`Finished bundling in, ${Date.now() - start} ms.`));
+    gutil.log(gutil.colors.green(`Finished bundling in, 
+        ${Date.now() - start} ms.`));
 })
 .pipe(source('bundle.js'))
     .pipe(gulp.dest(paths.dist));
