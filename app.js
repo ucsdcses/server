@@ -60,7 +60,7 @@ app.use((req, res) => {
     res.status(404).sendFile(path.join(public, '404.html'));
 });
 
-var PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 3000;
 
 // Export the app so it can be tested
 module.exports = app.listen(PORT, () => log.info('Server listening on port', PORT));
