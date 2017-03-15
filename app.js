@@ -61,4 +61,6 @@ app.use((req, res) => {
 });
 
 var PORT = process.env.PORT || 3000;
-app.listen(PORT, () => log.info('Server listening on port', PORT));
+
+// Export the app so it can be tested
+module.exports = app.listen(PORT, () => log.info('Server listening on port', PORT));

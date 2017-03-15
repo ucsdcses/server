@@ -4,8 +4,8 @@
   "description": "CSES webserver",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js | bunyan -o short",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=dev node app.js | bunyan -o short",
+    "test": "NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
     "body-parser": "^1.17.1",
     "bunyan": "^1.8.8",
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0",
+    "really-need": "^1.9.2"
   }
 }
