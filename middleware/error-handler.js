@@ -10,5 +10,5 @@ module.exports = (err, req, res, next) => {
   }
 
   log.error('Server error:', err.stack);
-  res.status(500).sendFile(errPath);
+  return res.status(500).sendFile(errPath);
 };

@@ -10,22 +10,22 @@ const stdoutLevel = env === 'dev' ? 'info' : bunyan.FATAL + 1;
 const errLevel = env === 'test' ? bunyan.FATAL + 1 : 'error';
 
 const log = bunyan.createLogger({
-    name: 'app',
-    serializers: bunyan.stdSerializers,
-    streams: [
-        {
-            level: stdoutLevel,
-            stream: process.stdout
-        },
-        {
-            level: errLevel,
-            type: 'rotating-file',
-            path: path.join(__dirname, 'logs', 'error.log'),
-            period: '1d',
-            count: 7
-        }
-    ],
-    src: env !== 'production'
+  name: 'app',
+  serializers: bunyan.stdSerializers,
+  streams: [
+    {
+      level: stdoutLevel,
+      stream: process.stdout,
+    },
+    {
+      level: errLevel,
+      type: 'rotating-file',
+      path: path.join(__dirname, 'logs', 'error.log'),
+      period: '1d',
+      count: 7,
+    },
+  ],
+  src: env !== 'production',
 });
 
 log.info('Logger initialized with environment', env);
