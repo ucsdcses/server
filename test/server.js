@@ -22,7 +22,7 @@ describe('Routing', () => {
 
   ///////////////////////////////////////////////////////////////////
 
-  let routes = ['/', '/cselabs', '/cseday', '/devfair', '/late-night-hacks', '/dynamic'];
+  let routes = ['/', '/cselabs', '/cseday', '/devfair', '/late-night', '/dynamic'];
 
   routes.forEach(route => {
     describe('GET ' + route, () => {
