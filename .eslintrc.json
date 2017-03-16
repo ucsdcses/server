@@ -1,32 +1,61 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true,
-        "mocha": true,
-        "jquery": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single",
-            {
-                "avoidEscape": true,
-                "allowTemplateLiterals": true
-            }
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "jquery": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-empty-function": "error",
+    "global-require": "error",
+    "no-path-concat": "error",
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "block-spacing": [
+      "error",
+      "always"
+    ],
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "lines-around-comment": [
+      "error",
+      {
+        "beforeBlockComment": true,
+        "beforeLineComment": true
+      }
+    ],
+    "no-lonely-if": "error",
+    "arrow-spacing": "error",
+    "keyword-spacing": "error",
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
 }

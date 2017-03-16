@@ -5,7 +5,8 @@ $(document).on('ready', function() {
     if (e.keyCode === 27) { // escape key maps to keycode `27`
       if ($('.subscribe-form').css('display') === 'block') {
         $('.subscribe-close').click();
-      } else {
+      }
+      else {
         $('.nav-right-hamburger, .nav-right-collapse').removeClass('on');
       }
     }

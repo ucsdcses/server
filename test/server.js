@@ -9,9 +9,12 @@ describe('Routing', () => {
 
   // Restart server before each test
   beforeEach(() => {
+
     // Bust the require cache to ensure app is restarted cleanly
+    /* eslint-disable */
     delete require.cache[require.resolve('../app')];
     server = require('../app');
+    /* eslint-enable */
   });
 
   // Close server after each test

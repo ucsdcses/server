@@ -11,12 +11,16 @@ $(document).on('ready', function() {
   let lastId;
   const nav = $('.nav-right-collapse, .nav-right');
   const navHeight = 60;
+
   // all list items
   const links = nav.find('a');
+
   // anchors corresponding to menu items
   const scrollLinks = links.map(function() {
     let link = $($(this).attr('href'));
-    if (link.length) { return link; }
+    if (link.length) {
+      return link; 
+    }
   });
 
   /* Easing scroll animation to the correct part of the page */
@@ -34,13 +38,15 @@ $(document).on('ready', function() {
     const scrollTop = $(document).scrollTop();
     if (scrollTop > 60) {
       $('nav').addClass('fixed');
-    } else {
+    }
+    else {
       $('nav').removeClass('fixed');
     }
   });
 
   /* Highlight current nav item */
   $(document).on('scroll', function() {
+
     // Get container scroll position
     const fromTop = $(this).scrollTop()+navHeight+25;
 
@@ -48,6 +54,7 @@ $(document).on('ready', function() {
     let cur = scrollLinks.map(function() {
       let linkTop = $(this).offset().top;
       let sectionHeight = $(this).height();
+
       // 2nd check is to unselect the last item if
       // we keep scrolling past it. Give it leeway of 125
       // to account for padding
@@ -55,6 +62,7 @@ $(document).on('ready', function() {
         return this;
       }
     });
+
     // Get the id of the current element
     cur = cur[cur.length-1];
     const id = cur && cur.length ? cur[0].id : '';
@@ -74,7 +82,8 @@ $(document).on('ready', function() {
     if (e.keyCode === 27) { // escape key maps to keycode `27`
       if ($('.subscribe-form').css('display') === 'block') {
         $('.subscribe-close').click();
-      } else {
+      }
+      else {
         $('.nav-right-hamburger, .nav-right-collapse').removeClass('on');
       }
     }
