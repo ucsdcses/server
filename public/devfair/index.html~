@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Eventually by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+                <img src="http://cses.ucsd.edu/images/cseslogo-300.png" href="cses.ucsd.edu" class="main-logo"></img>
+				<p style="margin-bottom: 0;">presents the</p>
+				<h1>UCSD Developer Fair</h1>
+				<p>This is a place for the information about the event, such as the day <br>
+                   during which it is scheduled to take place, and location.</p>
+			</header>
+
+		<!-- Center Buttons -->
+			<div id="center-buttons">
+				<button>Students</button>
+                <div class="divider"></div>
+				<button>Sponsors</button>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li>Contact Us<a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
