@@ -163,6 +163,7 @@ window.onload = function(){
   */
 };
 
+/* eslint-disable */
 function update() {
 
   //console.log('here');
@@ -171,3 +172,4 @@ function update() {
   socket.emit('askForData');
 
 }
+/* eslint-enable */

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=dev node app.js | bunyan -o short",
-    "test": "NODE_ENV=test mocha"
+    "test": "eslint ./* && NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
