@@ -1,5 +1,5 @@
 # The CSES Server
-
+[![CircleCI](https://circleci.com/gh/jsdavis/server.svg?style=svg)](https://circleci.com/gh/jsdavis/server)
 ### Installation
 Run the following commands to download and install the server
 ```
