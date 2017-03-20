@@ -10,7 +10,7 @@ const log = require('./log');
 const reqLog = require('./middleware/req-logger');
 const errorHandler = require('./middleware/error-handler');
 
-/ /;///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 const app = express();
 const publicDir = path.join(__dirname, 'public');
