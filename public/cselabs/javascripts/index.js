@@ -1,14 +1,14 @@
-var socket;
-var dataObj ={
+let socket;
+const dataObj = {
   date: 'x',
   labs: []
 };
 
-var loadID;
+let loadID;
 
-$(document).ready(function(){
+$(document).ready(() => {
 
-  socket.on('Event', function(data){
+  socket.on('Event', data => {
 
     //console.log('client side received');
     dataObj.date = data.date;
@@ -16,8 +16,7 @@ $(document).ready(function(){
   });
 });
 
-var seatmapStandard =
-  [
+const seatmapStandard = [
   [0, 0, 0, 1, 2, 3, 4, 5, 6],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0,12,11,10, 9, 8, 7],
@@ -29,10 +28,9 @@ var seatmapStandard =
   [0, 0, 0,36,35,34,33,32,31],
   [0, 0, 0,37,38,39,40,41,42],
   [0, 0, 0, 0, 0, 0, 0, 0, 0]
-  ];
+];
 
-var seatmap270 =
-  [
+const seatmap270 = [
   [0, 0, 0, 6, 5, 4, 3, 2, 1],
   [0, 0, 0, 7, 8, 9,10,11,12],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -45,14 +43,14 @@ var seatmap270 =
   [0, 0, 0,42,41,40,39,38,37],
   [0, 0, 0,43,44,45,46,47,48],
   [0, 0, 0, 0, 0, 0, 0, 0, 0]
-  ];
+];
 
-var drawLoading = function(){
-  for (var i = 0; i < 5; i++) {
-    var room = (23 + i) * 10 + 'c';
-    var c = document.getElementById(room);
-    var ctx = c.getContext('2d');
-    var tGray = 'rgba(128,128,128,.4)';
+const drawLoading = function() {
+  for (let i = 0; i < 5; i++) {
+    const room = (23 + i) * 10 + 'c';
+    const c = document.getElementById(room);
+    const ctx = c.getContext('2d');
+    const tGray = 'rgba(128,128,128,.4)';
     ctx.strokeStyle = tGray;
     ctx.fillStyle = tGray;
     ctx.strokeWidth = '3px';
@@ -60,23 +58,22 @@ var drawLoading = function(){
     ctx.stroke();
   }
 
-  var drawWidth = 10;
-  var drawBar = function(){
-    for (var j = 0; j < 5; j++) {
-      var room = (23 + j) * 10 + 'c';
-      var c = document.getElementById(room);
-      var ctx = c.getContext('2d');
+  let drawWidth = 10;
+  const drawBar = function() {
+    for (let j = 0; j < 5; j++) {
+      const room = (23 + j) * 10 + 'c';
+      const c = document.getElementById(room);
+      const ctx = c.getContext('2d');
       ctx.fillRect(225 / 2 - 75, 275 / 2 - 6, drawWidth, 12);
       drawWidth += 2;
-      if (drawWidth > 150){
+      if (drawWidth > 150)
         drawWidth = 150;
-      }
     }
   };
   loadID = setInterval(drawBar, 26);
 };
 
-var drawRoom = function(labInfo, sS, ctx, seatmap){
+const drawRoom = function(labInfo, sS, ctx, seatmap) {
 
   /*clear away whatever was there before*/
   ctx.clearRect(0,0,223-1,298-1);
@@ -89,66 +86,64 @@ var drawRoom = function(labInfo, sS, ctx, seatmap){
 
   /*end tables and door*/
 
-  var rows = seatmap.length;
-  var cols = seatmap[0].length;
+  const rows = seatmap.length;
+  const cols = seatmap[0].length;
 
-  for (var i = 0; i < rows; i++){
-    for (var j = 0; j < cols; j++){
-      var x = sS*j;
-      var y = sS*i;
-      var num = seatmap[i][j];
-      if (num == 0){
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      const x = sS*j;
+      const y = sS*i;
+      const num = seatmap[i][j];
+      if (num == 0)
         continue;
-      }
-      else if (labInfo.charAt(num) == 0){
+
+      else if (labInfo.charAt(num) == 0)
         ctx.fillStyle = 'lawngreen';
-      }
-      else {
+
+      else
         ctx.fillStyle = 'rgba(211,211,211,.4)';
-      }
+
       ctx.fillRect(x+1,y,sS-2,sS-2);
     }
   }
 };
 
 
-var updateAS = function(j){
-  var labInfo = dataObj.labs[j];
-  var AS = 0;
-  for (var i = 1; i <= labInfo.length; i++){
-    if (labInfo.charAt(i) == '0'){
+const updateAS = function(j) {
+  const labInfo = dataObj.labs[j];
+  let AS = 0;
+  for (let i = 1; i <= labInfo.length; i++) {
+    if (labInfo.charAt(i) == '0')
       AS++;
-    }
   }
-  var ASid = (23 + j)*10 + 'seats';
+  const ASid = (23 + j)*10 + 'seats';
 
   document.getElementById(ASid).innerHTML = 'Available Seats: ' + AS;
-
 };
 
-var seatmaps = [seatmapStandard,seatmapStandard,
-  seatmapStandard,seatmapStandard, seatmap270];
+const seatmaps = [seatmapStandard, seatmapStandard,
+  seatmapStandard, seatmapStandard, seatmap270];
 
-window.onload = function(){
+window.onload = function() {
 
   /*add loading bar while waiting for data from socket*/
   drawLoading();
 
-  setTimeout(function(){
+  setTimeout(() => {
     clearInterval(loadID);
 
-    for (var i = 0; i < 5; i++){
-      var labInfo = dataObj.labs[i];
-      var room = (23 + i)*10 + 'c';
-      var c = document.getElementById(room);
-      var ctx = c.getContext('2d');
+    for (let i = 0; i < 5; i++) {
+      const labInfo = dataObj.labs[i];
+      const room = (23 + i)*10 + 'c';
+      const c = document.getElementById(room);
+      const ctx = c.getContext('2d');
       drawRoom(labInfo, 25, ctx, seatmaps[i]);
       updateAS(i);
     }
 
     /*time conversion stuff*/
-    var amOrPm = 'PM';
-    var hours = dataObj.date.substring(11,13);
+    let amOrPm = 'PM';
+    let hours = dataObj.date.substring(11,13);
     if (hours < '12'){
       amOrPm = 'AM';
     }
@@ -161,15 +156,15 @@ window.onload = function(){
     if (hours < '10' && amOrPm == 'AM'){
       hours = hours.substring(1,2);
     }
-    var layDate = hours + dataObj.date.substring(13,16) + ' ' + amOrPm;
+    const layDate = hours + dataObj.date.substring(13,16) + ' ' + amOrPm;
 
     /*end time conversion stuff*/
 
     document.getElementById('lastUpdate').innerHTML = 'Accurate as of: '
         + layDate;
 
-    var labDay = Date().substring(0,3);
-    var labTime = Date().substring(16,18) + Date().substring(19,21);
+    const labDay = Date().substring(0,3);
+    const labTime = Date().substring(16,18) + Date().substring(19,21);
 
     //console.log(labDay+labTime);
 

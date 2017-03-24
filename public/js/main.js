@@ -1,4 +1,4 @@
-$(document).on('ready', function() {
+$(document).on('ready', () => {
 
   /* Animate the site header */
   const wrapper = $('.wrapper');
@@ -17,7 +17,7 @@ $(document).on('ready', function() {
 
   // anchors corresponding to menu items
   const scrollLinks = links.map(function() {
-    let link = $($(this).attr('href'));
+    const link = $($(this).attr('href'));
     if (link.length) {
       return link; 
     }
@@ -34,7 +34,7 @@ $(document).on('ready', function() {
   });
 
   /* Fix navbar to top */
-  $(document).on('scroll', function() {
+  $(document).on('scroll', () => {
     const scrollTop = $(document).scrollTop();
     if (scrollTop > 60) {
       $('nav').addClass('fixed');
@@ -52,8 +52,8 @@ $(document).on('ready', function() {
 
     // Get id of current scroll item
     let cur = scrollLinks.map(function() {
-      let linkTop = $(this).offset().top;
-      let sectionHeight = $(this).height();
+      const linkTop = $(this).offset().top;
+      const sectionHeight = $(this).height();
 
       // 2nd check is to unselect the last item if
       // we keep scrolling past it. Give it leeway of 125
@@ -78,7 +78,7 @@ $(document).on('ready', function() {
   });
 
   // esc hit - close form or close nav-collapse
-  $(document).keyup(function(e) {
+  $(document).keyup((e) => {
     if (e.keyCode === 27) { // escape key maps to keycode `27`
       if ($('.subscribe-form').css('display') === 'block') {
         $('.subscribe-close').click();
@@ -90,7 +90,7 @@ $(document).on('ready', function() {
   });
 
   // subscribe clicked - show subscribe form
-  $('.subscribe-btn').on('click', function() {
+  $('.subscribe-btn').on('click', () => {
     $('.subscribe-overlay').show();
     $('.subscribe-form').show().animate({
       top: '30%'
@@ -98,14 +98,14 @@ $(document).on('ready', function() {
   });
 
   // subscribe-close or outside of form is clicked - exit form
-  $('.subscribe-overlay, .subscribe-close').on('click', function() {
+  $('.subscribe-overlay, .subscribe-close').on('click', () => {
     $('.subscribe-overlay').hide();
     $('.subscribe-form').css('top','28%');
     $('.subscribe-form').hide();
   });
 
   // hamburger nav clicked - toggle nav-collapse
-  $('.nav-right-hamburger, .nav-right-collapse a').on('click', function() {
+  $('.nav-right-hamburger, .nav-right-collapse a').on('click', () => {
     $('.nav-right-hamburger').toggleClass('on');
     $('.nav-right-collapse').toggleClass('on');
   });

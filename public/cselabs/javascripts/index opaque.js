@@ -1,12 +1,12 @@
-var socket;
-var dataObj ={
+let socket;
+const dataObj ={
   date: 'x',
   labs: []
 };
 
-$(document).ready(function(){
+$(document).ready(() => {
 
-  socket.on('Event', function(data){
+  socket.on('Event', (data) => {
 
     //console.log('client side received');
     dataObj.date = data.date;
@@ -14,26 +14,26 @@ $(document).ready(function(){
   });
 });
 
-var comp1 = new Image();
+const comp1 = new Image();
 comp1.src = 'images/comp1.png';
-var comp2 = new Image();
+const comp2 = new Image();
 comp2.src = 'images/comp2.png';
 
-var drawRoom = function(labInfo, sS, lab) {
+const drawRoom = function(labInfo, sS, lab) {
 
   //sS = 20;
-  var width = sS*9;
-  var height = sS*11;
+  const width = sS*9;
+  const height = sS*11;
 
   /*y values of each row*/
-  var yArray = [0, 0, sS*2, sS*3, sS*5, sS*6, sS*8, sS*9];
+  const yArray = [0, 0, sS*2, sS*3, sS*5, sS*6, sS*8, sS*9];
 
   /*constant used for drawing*/
-  var cArray = [0, 2, -6, 2-12, -18, 2-24, -30, 2-36];
+  const cArray = [0, 2, -6, 2-12, -18, 2-24, -30, 2-36];
 
   //get the canvas
-  var c = document.getElementById(lab);
-  var ctx = c.getContext('2d');
+  const c = document.getElementById(lab);
+  const ctx = c.getContext('2d');
   ctx.font = '26px Arial';
 
   //load computers
@@ -56,7 +56,7 @@ var drawRoom = function(labInfo, sS, lab) {
 
   // lawngreen for available, lightgray for not
   // var pickColor = function(number, xpos, ypos) {
-  var pickColor = function(number) {
+  const pickColor = function(number) {
     if (labInfo.charAt(number) == 0)
       ctx.fillStyle = 'lawngreen';
 
@@ -68,13 +68,13 @@ var drawRoom = function(labInfo, sS, lab) {
   };
 
   /*draws a station*/
-  var drawStation = function(number, xpos, ypos){
+  const drawStation = function(number, xpos, ypos){
 
     //uncomment for outline
     //ctx.rect(x,y,40,40);
 
-    pickColor(i, xpos, ypos);
-    ctx.fillRect(x+1,y,sS-2,sS-2);
+    pickColor(number, xpos, ypos);
+    ctx.fillRect(xpos+1,ypos,sS-2,sS-2);
 
     //uncomment for number to show
     //ctx.fillStyle = 'black';
@@ -82,7 +82,7 @@ var drawRoom = function(labInfo, sS, lab) {
 
   };
 
-  var getRow = function(number){
+  const getRow = function(number){
     if (number < 7){
       return 1;
     }
@@ -107,12 +107,12 @@ var drawRoom = function(labInfo, sS, lab) {
   };
 
   /*loop through each comp and draw it*/
-  for (var i = 1; i <= 42; i++){
-    var row = getRow(i);
+  for (let i = 1; i <= 42; i++) {
+    const row = getRow(i);
 
     /*determine xpos based on snake path*/
     /*get constant from array aswell*/
-    var x;
+    let x;
     if ((i%12) <= 6 && (i%12) > 0){
       x = (i + cArray[row])*sS;
     }
@@ -121,31 +121,31 @@ var drawRoom = function(labInfo, sS, lab) {
     }
 
     /*fetch y value from array*/
-    var y = yArray[row];
+    const y = yArray[row];
 
     drawStation(i,x,y);
   }
 
 };
 
-var updateAS = function(j){
-  var labInfo = dataObj.labs[j];
-  var AS = 0;
-  for (var i = 1; i <= 42; i++){
-    if (labInfo.charAt(i) == '0'){
+const updateAS = function(j) {
+  const labInfo = dataObj.labs[j];
+  let AS = 0;
+  for (let i = 1; i <= 42; i++) {
+    if (labInfo.charAt(i) == '0') {
       AS++;
     }
   }
-  var ASid = (23 + j)*10 + 'seats';
+  const ASid = (23 + j)*10 + 'seats';
   document.getElementById(ASid).innerHTML = 'Available Seats: ' + AS;
 
 };
 
-window.onload = function(){
-  setTimeout(function(){
-    for (var i = 0; i < 5; i++){
-      var labInfo = dataObj.labs[i];
-      var room = (23 + i)*10 + 'c';
+window.onload = function() {
+  setTimeout(() => {
+    for (let i = 0; i < 5; i++) {
+      const labInfo = dataObj.labs[i];
+      const room = (23 + i)*10 + 'c';
       drawRoom(labInfo, 25, room);
       updateAS(i);
     }

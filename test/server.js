@@ -24,7 +24,7 @@ describe('Routing', () => {
 
   ///////////////////////////////////////////////////////////////////
 
-  let routes = ['/', '/cselabs', '/cseday', '/devfair', '/late-night', '/dynamic'];
+  const routes = ['/', '/cselabs', '/cseday', '/devfair', '/late-night', '/dynamic'];
 
   routes.forEach(route => {
     describe('GET ' + route, () => {

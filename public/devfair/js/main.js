@@ -1,9 +1,9 @@
 
-$(document).ready(function() {
+$(document).ready(() => {
 
   $('body').addClass('loaded');
 
-  $(function () {
+  $(() => {
     $('a[rel="lightbox"]').fluidbox();
   });
 

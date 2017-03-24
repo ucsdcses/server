@@ -1,7 +1,7 @@
-$(document).ready( function(){
+$(document).ready( () => {
 
 
-  $( '#about' ).hover( function() {
+  $( '#about' ).hover( () => {
     $( '#contactSection' ).stop().fadeOut( 500 );
     $( '#titleSection' ).stop().fadeOut( 500 );
     $( '#signupSection' ).stop().fadeOut( 500 );
@@ -17,7 +17,7 @@ $(document).ready( function(){
       transition : 'color 0.5s ease-in-out',
       'color': 'white'
     });
-  }, function() {
+  }, () => {
     $( '#aboutSection' ).stop().fadeOut( 500 );
     $( '#titleSection' ).stop().fadeIn( 500 );
     $( '#fullPage' ).css({ transition : 'background 0.1s ease-in-out',
@@ -32,7 +32,7 @@ $(document).ready( function(){
       'color': 'black'
     });
   });
-  $( '#contact' ).hover( function() {
+  $( '#contact' ).hover( () => {
     $( '#aboutSection' ).stop().fadeOut( 500 );
     $( '#titleSection' ).stop().fadeOut( 500 );
     $( '#signupSection' ).stop().fadeOut( 500 );
@@ -48,7 +48,7 @@ $(document).ready( function(){
       transition : 'color 0.5s ease-in-out',
       'color': 'white'
     });
-  }, function() {
+  }, () => {
     $( '#contactSection' ).stop().fadeOut( 500 );
     $( '#titleSection' ).stop().fadeIn( 500 );
     $( '#fullPage' ).css({ transition : 'background 0.1s ease-in-out',
@@ -63,7 +63,7 @@ $(document).ready( function(){
       'color': 'black'
     });
   });
-  $( '#signup' ).hover( function() {
+  $( '#signup' ).hover( () => {
     $( '#aboutSection' ).stop().fadeOut( 500 );
     $( '#titleSection' ).stop().fadeOut( 500 );
     $( '#contactSection' ).stop().fadeOut( 500 );
@@ -79,6 +79,6 @@ $(document).ready( function(){
       transition : 'color 0.5s ease-in-out',
       'color': 'white'
     });
-  }, function() { // Purposefully left empty
+  }, () => { // Purposefully left empty
   });
 });
