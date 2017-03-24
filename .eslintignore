@@ -1,0 +1,10 @@
+*.md
+node_modules/*
+public/js/min/*
+public/dynamic/js/*
+public/archives/*
+archives/*
+*.json
+public/devfair/js/vendor
+public/devfair/assets
+*.min.js
