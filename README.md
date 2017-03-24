@@ -3,7 +3,7 @@
 ### Installation
 Run the following commands to download and install the server
 ```
-git clone https://github.com/jsdavis/server.git
+git clone https://github.com/ucsdcses/server.git
 npm install
 npm install -g bunyan mocha
 ```
