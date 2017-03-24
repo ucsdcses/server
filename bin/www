@@ -13,7 +13,7 @@ var reload = require('require-reload')(require);
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
 
 /**
@@ -26,30 +26,32 @@ var server = http.createServer(app);
 //CSES LABS INITIALIZATION
 //=========================================================
 
-/*install sockets*/
-var io = require('socket.io').listen(server);
-/*getting and broadcasting data*/
-var data = require('./readLog');
-console.log('log.txt loaded');
-setInterval(function(){
-  try {
-    data = reload('./readLog');
-  } catch (e) {
-    //if this threw an error, the api variable is still set to the old, working version
-    console.error("Failed to reload api.js! Error: ", e);
-  }
-  console.log('log.txt reloaded, from: ' + data.date);
-}, 5*60*1000);
+/*
+* // install sockets
+* var io = require('socket.io').listen(server);
+* // getting and broadcasting data
+* var data = require('./readLog');
+* console.log('log.txt loaded');
+* setInterval(function(){
+*   try {
+*     data = reload('./readLog');
+*   } catch (e) {
+*     // if this threw an error, the api variable is still set to the old, working version
+*     console.error("Failed to reload api.js! Error: ", e);
+*   }
+*   console.log('log.txt reloaded, from: ' + data.date);
+* }, 5*60*1000);
 
-/*emit data about which lab computers are available*/
-io.sockets.on('connection', function(socket){
-  socket.on('askForData', function(){
-    console.log('data asked for');
-    socket.emit('Event', data);
-    console.log(data);
-  })
+* // emit data about which lab computers are available
+* io.sockets.on('connection', function(socket){
+*   socket.on('askForData', function(){
+*     console.log('data asked for');
+*     socket.emit('Event', data);
+*     console.log(data);
+*   })
 
-});
+* });
+*/
 
 //=========================================================
 
