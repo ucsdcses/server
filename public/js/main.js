@@ -1,4 +1,4 @@
-$(document).on('ready', () => {
+$(() => {
 
   /* Animate the site header */
   const wrapper = $('.wrapper');
@@ -69,7 +69,7 @@ $(document).on('ready', () => {
     if (lastId !== id) {
       lastId = id;
       links.removeClass('active');
-      links.filter('[href=#'+id+']').addClass('active');
+      links.filter('[href="#'+id+'"]').addClass('active');
     }
   });
 
