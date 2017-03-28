@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config({silent: true});
 
 // Node modules
 const express = require('express');
@@ -9,6 +10,7 @@ const bodyParser = require('body-parser');
 const log = require('./log');
 const reqLog = require('./middleware/req-logger');
 const errorHandler = require('./middleware/error-handler');
+const fbEvents = require('./controllers/fbEvents');
 
 /////////////////////////////////////////////////////////////////////
 
@@ -22,6 +24,7 @@ app.use(reqLog);
 
 // Entire website is currently static pages, so this covers all routes
 app.use(express.static('public'));
+app.use('/fb-events', fbEvents);
 
 /////////////////////////////////////////////////////////////////////
 

@@ -62,3 +62,6 @@ Temporary Items
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+
+# Hide environment variables
+.env

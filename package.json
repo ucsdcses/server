@@ -21,7 +21,11 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "bunyan": "^1.8.8",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "angular": "^1.6.3",
+    "fbgraph": "^1.4.1",
+    "dotenv": "^4.0.0",
+    "strftime": "^0.10.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

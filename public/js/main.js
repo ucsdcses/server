@@ -111,3 +111,13 @@ $(document).on('ready', () => {
   });
 
 });
+
+/* Simple controller that modifies the scope when the fb-events are grabbed
+ * from the back-end */
+angular.module('mainPage', [])
+  .controller('fbEventController', ['$scope', function($scope) {
+    $.get( 'fb-events', (data) => {
+      $scope.events = data;
+      $scope.$apply();
+    });
+  }]);
