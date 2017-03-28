@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html> <head>
+<html ng-app="mainPage"> <head>
 <title>CSES UCSD</title>
 
 <meta charset="utf-8" />
@@ -30,6 +30,7 @@
 
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 
 <!-- STYLESHEET -->
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
@@ -136,7 +137,37 @@
       <div class="section-container container">
         <h1>Events</h1>
         <!-- Will be loaded with events -->
-        <div id="events-container"/>
+        <div ng-controller="fbEventController as eventList" id="events-container"/>
+          <div ng-repeat="event in events">
+            <div class="event">
+              <div class="event-img-container">
+                <div 
+                   class="event-img-overlay" 
+                   ng-style="{'background-image': 'url({{event.cover}})'}"
+                >
+                  <h4>{{event.name}}</h4>
+                </div>
+              </div>
+              <p class="event-date inline"><i class="fa fa-calendar-o"></i>
+                {{event.start_time}}
+              </p>
+              <p class="event-time inline"><i class="fa fa-clock-o"></i>
+                {{event.hour_time}}
+              </p>
+              <p class="event-location"><i class="fa fa-map-marker"></i>
+                {{event.place.name}}
+              </p>
+              <p class="event-info">
+                {{event.description}}
+              </p>
+              <a
+                class="event-link-btn"
+                href="https://www.facebook.com/events/{{event.id}}"
+              >
+                Link to Facebook Event
+              </a>
+            </div>
+          </div>
         </div>
         <a href="https://www.facebook.com/groups/ucsdcses/events/" 
            class="events-archive-btn">View Archives</a>'

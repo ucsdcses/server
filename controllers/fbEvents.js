@@ -24,66 +24,33 @@ router.get('/', (req, res) => {
     events = events['data'].slice(0,3);
 
     // We are going to build the html for the list of events
-    let html = '';
     let eventCounter = 0;
-    const eventArray = ['', '', '', '', ''];
+    const eventArray = [0, 0, 0];
 
-    // Array of pictures for each of the events
-    const picURLarray = [0, 0, 0, 0, 0];
-
-    // Fore each event, grab its picture, and then when you get it, make the
-    // event's html. Then, add it in its proper position in the eventArray,
-    // and increment the number of events seen. If we have seen five events,
-    // then put everything into one string and send the respose required.
+    // For each event, we do some formatting of the json object, and attach 
+    // the event's cover picture through an additional api call.
     events.forEach( (happening, index) => {
+
+      // Event description and date formatting
+      happening['description'] = happening['description'].split('\n')[0];
+      happening['start_time'] = strftime('%B %d, %Y', 
+        new Date(happening['start_time']));
+      happening['hour_time'] = strftime('%l %P', 
+        new Date(happening['start_time']));
+
+      // Set the index properly to the current happening
+      eventArray[index] = happening;
+
+      // Grab the pictures of the events
       graph.get('/'+happening['id']+'?fields=cover', (err, picture) => {
-        eventArray[index] += '<div class="event">';
         if ( !err ) {
-          picURLarray[index] = picture['cover']['source'];
-
-          // Event name and picture
-          eventArray[index] += '<div class="event-img-container">';
-          eventArray[index] += '<div class="event-img-overlay" style="background-image: url(';
-          eventArray[index] += picURLarray[index] + ');">';
-          eventArray[index] += '<h4>' + happening['name'] + '</h4>';
-          eventArray[index] += '</div></div>';
-
-        }
-        else {
-          eventArray[index] += '<h4>' + happening['name'] + '</h4>';
+          happening['cover'] = picture['cover']['source'];
         }
 
-        // Event date
-        eventArray[index] += '<p class="event-date inline">';
-        eventArray[index] += '<i class="fa fa-calendar-o"></i>';
-        eventArray[index] += strftime('%B %d, %Y', 
-          new Date(happening['start_time'])) + '</p>';
-
-        // Event location
-        if ( happening['place'] ) {
-          eventArray[index] += '<p class="event-location"><i class="fa fa-map-marker"></i>';
-          eventArray[index] += happening['place']['name'] + '</p>';
-        }
-        eventArray[index] += '<p class="event-info">' + 
-          happening['description'].split('\n')[0] + '</p>';
-
-        // Event link
-        eventArray[index] += '<a class="event-link-btn" href="https://www.facebook.com/events/';
-        eventArray[index] += happening['id'] + '/" target="_blank" >Facebook Event Page ';
-        eventArray[index] += '</a>';
-
-        eventArray[index] += '</div>';
-
+        // Counter to handle the async
         eventCounter++;
-
         if ( eventCounter === 3 ) {
-
-          // loop through event array, adding events
-          eventArray.forEach( (eventHtml) => {
-            html += eventHtml;
-          });
-
-          res.send(html);
+          res.send(eventArray);
         }
       });
     });
