@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config();
+require('dotenv').config({silent: true});
 
 // Node modules
 const express = require('express');
