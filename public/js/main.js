@@ -73,6 +73,8 @@ $(document).on('ready', () => {
     }
   });
 
+  $('#events-container').load('fb-events');
+
   $('.contact-submit-btn').on('click', function() {
     $(this).submit();
   });
