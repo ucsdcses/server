@@ -69,7 +69,9 @@ $(() => {
     if (lastId !== id) {
       lastId = id;
       links.removeClass('active');
-      links.filter('[href="#'+id+'"]').addClass('active');
+      links.filter((link) => { 
+        return ( links[link].hash === '#'+id );
+      }).addClass('active');
     }
   });
 
