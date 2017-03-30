@@ -141,11 +141,10 @@
           <div ng-repeat="event in events">
             <div class="event">
               <div class="event-img-container">
-                <div 
-                   class="event-img-overlay" 
-                   ng-style="{'background-image': 'url({{event.cover}})'}"
+                <div class="event-img-overlay" 
                 >
                   <h4>{{event.name}}</h4>
+                  <img ng-src={{event.cover}}></img>
                 </div>
               </div>
               <p class="event-date inline"><i class="fa fa-calendar-o"></i>
@@ -164,7 +163,7 @@
                 class="event-link-btn"
                 href="https://www.facebook.com/events/{{event.id}}"
               >
-                Link to Facebook Event
+                Go to Facebook Event
               </a>
             </div>
           </div>

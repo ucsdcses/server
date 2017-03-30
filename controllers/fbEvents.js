@@ -36,7 +36,7 @@ router.get('/', (req, res) => {
 
       // Event description and date formatting
       happening['description'] = happening['description'].split('\n')[0];
-      happening['hour_time'] = strftime('%l %P', 
+      happening['hour_time'] = strftime('%l:%M %P', 
         new Date(happening['start_time']));
       happening['start_time'] = strftime('%B %d, %Y', 
         new Date(happening['start_time']));
