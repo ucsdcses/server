@@ -13,8 +13,11 @@ graph.setAppSecret(process.env.appSecret);
 // events using the graph api.
 router.get('/', (req, res) => {
 
+  const date = new Date('January 1, 2017');
+  const url = '/186014001799312/events';
+  
   // grab events from cses page
-  graph.get('/2202850342/events', (err, events) => {
+  graph.get(url, (err, events) => {
     if ( err ) {
       res.send( '<h1>Events could not be grabbed!</h1>' );
       return;
@@ -33,9 +36,9 @@ router.get('/', (req, res) => {
 
       // Event description and date formatting
       happening['description'] = happening['description'].split('\n')[0];
-      happening['start_time'] = strftime('%B %d, %Y', 
-        new Date(happening['start_time']));
       happening['hour_time'] = strftime('%l %P', 
+        new Date(happening['start_time']));
+      happening['start_time'] = strftime('%B %d, %Y', 
         new Date(happening['start_time']));
 
       // Set the index properly to the current happening
