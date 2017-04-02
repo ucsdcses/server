@@ -138,7 +138,7 @@
         <h1>Events</h1>
         <!-- Will be loaded with events -->
         <div ng-controller="fbEventController as eventList" id="events-container"/>
-          <div ng-repeat="event in events">
+          <div ng-repeat="event in events track by $index">
             <div class="event">
               <div class="event-img-container">
                 <div class="event-img-overlay" 
