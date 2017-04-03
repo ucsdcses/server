@@ -5,6 +5,7 @@ require('dotenv').config({silent: true});
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
 // Custom modules
 const log = require('./log');
@@ -21,6 +22,7 @@ const publicDir = path.join(__dirname, 'public');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(reqLog);
+app.use(compression({ threshold: 0 }));
 
 // Entire website is currently static pages, so this covers all routes
 app.use(express.static('public'));
