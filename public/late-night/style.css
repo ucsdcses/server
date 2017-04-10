@@ -22,7 +22,7 @@ body{
     background-size:cover;
     color:#000000;
     opacity: 1;
-    transition: 5s opacity;
+    transition: 1s opacity;
 }
 
 body.fade-out {
