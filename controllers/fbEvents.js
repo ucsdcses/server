@@ -13,7 +13,6 @@ graph.setAppSecret(process.env.appSecret);
 // events using the graph api.
 router.get('/', (req, res) => {
 
-  const date = new Date('January 1, 2017');
   const url = '/186014001799312/events';
   
   // grab events from cses page
