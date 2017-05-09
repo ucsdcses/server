@@ -53,6 +53,7 @@ router.get('/', (req, res) => {
         // Counter to handle the async
         eventCounter++;
         if ( eventCounter === 3 ) {
+          eventArray.reverse();
           res.send(eventArray);
         }
       });
