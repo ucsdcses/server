@@ -1,0 +1,67 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div id="flash-message"></div>
+<div id="page_content" class="static_pages home fadeIn animated top">
+    <div class="container" ng-hide="isLoggedIn()">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="intro"> Welcome to the UCSD Project Showcase, please log in for the best experience.</h1>
+                    </div>
+                </div>
+    </div>
+    <div class="container">
+        <div class="row projects-head">
+            <div class="col-md-11 col-md-offset-1">
+                <div id="project_info" class="row">
+                    <div class="col-sm-8 col-sm-push-4 no-padding">
+
+                    </div>
+                    <div class="col-sm-4 col-sm-pull-8">
+                        <h1 id="project-text" class="heading">Latest Projects</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content_block projects">
+
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+
+
+                    <div class="thumbnail" ng-repeat="p in projects">
+                        <div class="col-md-4 post-thumbnail with-left-border">
+                            <a href="project/{{p.id}}">
+                                <div class="post-image">
+                                    <div class="aspect-ratio r-16-9">
+                                        <div style="background-image: url({{p.imageUrl}});">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    <h3>{{p.title}}</h3>
+                                    <p class="capped" >{{p.description}}</p>
+                                    <!-- <p class="meta-text">&mdash; 5 months ago</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ajax-posts">
+                    <div class="col-md-12 text-center loadmore">
+                        <button ng-hide="loading" ng-click="loadMore()" class="btn btn-default projects">Load more</button>
+                        <i ng-show="loading" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw" style="font-size: 2.5em;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+
+            <div class="row row-same-height">
+                    <div class="space-footer-info">
+                        <a href="/"><img src="../../images/cseslogo-300.png" alt=""></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</div>

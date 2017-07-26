@@ -1,0 +1,37 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div class="fadeIn animated login-page">
+
+    <div class="row underline-links login-content">
+        <div class="col-sm-6 col-md-3 text-center">
+
+
+            <h1 class="login">Welcome Back!</h1>
+
+            <button id="fb-button" ng-disabled="submitting" class="btn btn-primary btn-large btn-block" ng-click="fbLogin()">
+                <i class="fa fa-facebook fa-pull-left fa-lg"></i> Login with Facebook
+            </button>
+
+            <form class="new_user" accept-charset="UTF-8" ng-submit="login()">
+                <div class="form-group">
+                    <label for="user_email">Email</label>
+                    <input class="form-control" type="email" name="email" id="user_email" ng-model="email" autofocus />
+                </div>
+                <div class="form-group">
+                    <label for="user_password">Password</label>
+                    <input class="form-control" type="password" name="password" ng-model="password" id="user_password" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="commit" ng-disabled="submitting" value="Log in" id="login_button" class="btn btn-lg btn-default sign-up" />
+                </div>
+
+                <a class="right-pad" href="register">Don't have an account?</a><br>
+
+                <a class="right-pad" href="#">Forgot your password?</a>
+            </form>
+        </div>
+
+        <div class="row col-sm-6 col-md-3">
+            <h5 ng-show="error" class="text-danger">{{error}}</h5>
+        </div>
+    </div>
+</div>

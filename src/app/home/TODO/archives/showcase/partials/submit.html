@@ -1,0 +1,59 @@
+<ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+<div class="fadeIn animated login-page">
+    <ng-include src="'/showcase/partials/navbar.html'"></ng-include>
+    <div class="container">
+    <div class="row top-elem underline-links login-content">
+        <div class="project-container text-center">
+
+
+            <h1>Submit!</h1>
+            <p class="meta-text">Please refrain from trolling / posting spam on this page. If any such posts are found they will be swiftly deleted. Email mbland@ucsd.edu for assistance.</p>
+            <form class="new_user" id="submit-form" ng-submit="submit()" accept-charset="UTF-8">
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input class="form-control" type="text" name="title" ng-model="project.title" required/>
+                </div>
+                <div class="form-group">
+                    <label>Project Description</label>
+                    <textarea class="form-control" name="description" ng-model="project.description" style="width: 100%; height: 241px;" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Project Website URL</label>
+                    <input class="form-control" type="url" name="website" ng-model="project.website"/>
+                </div>
+                <div class="form-group">
+                    <label>Project Repository URL</label>
+                    <input class="form-control" type="url" name="repo" ng-model="project.repo"/>
+                </div>
+                <div class="form-group">
+                    <label>Image URL (optional)</label>
+                    <input class="form-control" type="url" name="imageUrl" ng-model="project.imageUrl"/>
+                </div>
+                <div class="form-group">
+                    <ng-include ng-init="project=project" src="'/showcase/partials/contributorsPicker.html'"></ng-include>
+                </div>
+                <div class="form-group">
+                    <div vc-recaptcha key="'6Ldnkx8TAAAAAKGjHGj5AFQiBe9Z5LgL4-m9Oc9m'" ng-model="project.reCaptchaResponse"></div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" ng-disabled="submitting" value="Submit" class="btn btn-lg btn-default sign-up" />
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+            <h6 class="text-danger">{{error}}</h6>
+        </div>
+    </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+
+        <div class="row row-same-height">
+            <div class="space-footer-info">
+                <a href="/"><img src="../../images/cseslogo-300.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>

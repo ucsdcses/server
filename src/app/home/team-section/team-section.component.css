@@ -1,0 +1,105 @@
+section#team {
+  padding: 50px 0;
+  background-color: #fff; }
+  section#team .section-container {
+    margin: 0 auto;
+    max-width: 800px; }
+    section#team .section-container h1 {
+      color: #414141;
+      text-align: center;
+      font-weight: 700; }
+    section#team .section-container ul {
+      list-style: none;
+      text-align: center; }
+      section#team .section-container ul li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 10px;
+        width: 140px; }
+        @media only screen and (max-width: 39.9375em) {
+          section#team .section-container ul li {
+            margin: 20px 5px;
+            width: 105px; } }
+        @media only screen and (max-width: 23.4383em) {
+          section#team .section-container ul li {
+            margin: 20px 2px;
+            width: 85px; } }
+        section#team .section-container ul li h5.team-name {
+          color: #414141; }
+          @media only screen and (max-width: 39.9375em) {
+            section#team .section-container ul li h5.team-name {
+              font-size: 16px; } }
+          @media only screen and (max-width: 23.4383em) {
+            section#team .section-container ul li h5.team-name {
+              font-size: 13px; } }
+        section#team .section-container ul li p.team-position {
+          color: #676767;
+          font-size: 14px; }
+          @media only screen and (max-width: 23.4383em) {
+            section#team .section-container ul li p.team-position {
+              font-size: 12px; } }
+        section#team .section-container ul li .team-img-container {
+          max-width: 100%;
+          height: auto; }
+          section#team .section-container ul li .team-img-container img {
+            max-width: inherit;
+            height: auto;
+            border-radius: 100%; }
+          section#team .section-container ul li .team-img-container i.fa-linkedin {
+            font-size: 18px;
+            color: #025878; }
+            @media only screen and (max-width: 39.9375em) {
+              section#team .section-container ul li .team-img-container i.fa-linkedin {
+                font-size: 16px; } }
+          section#team .section-container ul li .team-img-container .no-linkedin-filler {
+            height: 22px;
+            background-color: black;
+            visibility: hidden; }
+          section#team .section-container ul li .team-img-container .team-overlay {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            background-color: rgba(1, 59, 80, 0.85);
+            opacity: 0;
+            transition: 0.2s all ease; }
+            @media only screen and (max-width: 39.9375em) {
+              section#team .section-container ul li .team-img-container .team-overlay {
+                width: 105px;
+                height: 105px; } }
+            @media only screen and (max-width: 23.4383em) {
+              section#team .section-container ul li .team-img-container .team-overlay {
+                width: 85px;
+                height: 85px; } }
+            section#team .section-container ul li .team-img-container .team-overlay a {
+              display: block;
+              display: flex;
+              flex-direction: column;
+              width: 140px;
+              height: 140px;
+              color: white;
+              font-size: 6px;
+              transition: 0.2s all ease;
+              justify-content: center; }
+              @media only screen and (max-width: 39.9375em) {
+                section#team .section-container ul li .team-img-container .team-overlay a {
+                  width: 105px;
+                  height: 105px; } }
+              @media only screen and (max-width: 23.4383em) {
+                section#team .section-container ul li .team-img-container .team-overlay a {
+                  width: 85px;
+                  height: 85px; } }
+              section#team .section-container ul li .team-img-container .team-overlay a .linkedin-btn {
+                color: #edab18;
+                font-weight: 700; }
+          section#team .section-container ul li .team-img-container:hover .team-overlay {
+            display: block;
+            opacity: 1; }
+            section#team .section-container ul li .team-img-container:hover .team-overlay a {
+              font-size: 16px; }
+              @media only screen and (max-width: 39.9375em) {
+                section#team .section-container ul li .team-img-container:hover .team-overlay a {
+                  font-size: 14px; } }
+              @media only screen and (max-width: 23.4383em) {
+                section#team .section-container ul li .team-img-container:hover .team-overlay a {
+                  font-size: 11px; } }

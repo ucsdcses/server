@@ -1,0 +1,35 @@
+
+footer {
+  padding: 60px 4%;
+  background-color: #f5f5f9; }
+  footer .footer-container {
+    margin: 0 auto;
+    max-width: 700px; }
+  footer .col {
+    display: inline-block;
+    width: 32%;
+    color: white;
+    vertical-align: top; }
+    @media only screen and (max-width: 47.9375em) {
+      footer .col {
+        width: 45%; } }
+    footer .col.right {
+      float: right; }
+    footer .col h5 {
+      margin-bottom: 10px;
+      color: #edab18;
+      font-weight: 400;
+      font-size: 14px; }
+    footer .col a, footer .col p {
+      display: block;
+      color: #414141;
+      font-size: 13px; }
+      footer .col a.subscribe-btn, footer .col p.subscribe-btn {
+        cursor: pointer; }
+    footer .col a:hover {
+      color: #025878; }
+  footer .footer-icons {
+    margin-top: 40px; }
+    footer .footer-icons img {
+      max-width: 100%;
+      max-height: 35px; }

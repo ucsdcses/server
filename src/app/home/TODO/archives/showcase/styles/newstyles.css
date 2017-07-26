@@ -1,0 +1,103 @@
+.btn-group {
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+#contribute {
+    width: auto;
+    padding: 8px;
+    margin-left: 0;
+    float: left;
+}
+
+.roster>a>img {
+    margin-left: 28%;
+    margin-right: 0px;
+    height: 50%;
+    width: 50%;
+}
+
+.roster .member-info>a>h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+.roster .member-info>p {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1em;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+
+
+}
+
+#modal-delete {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+#unlink-fb {
+    background: #3b5998;
+    border: 0px;
+    padding: 13px 21px;
+}
+
+#link-fb {
+    background: #3b5998;
+    border: 0px;
+    padding: 13px 30px;
+}
+
+
+#fb-button {
+    background: #3b5998;
+}
+
+a.btn.btn-lg.btn-default.btn-contribute {
+    padding: 5px 25px 4px;
+
+}
+
+@media (max-width: 690px) {
+    #unlink-fb {
+        padding: 13px 26px;
+    }
+
+    #contribute {
+        width: auto;
+        padding: 8px;
+        margin-left: 0;
+        float: left;
+    }
+
+    a.btn.btn-lg.btn-default.btn-contribute {
+	width: 140px;
+        padding: 5px 15px 4px;
+
+    }
+}
+
+@media (max-width: 428px) {
+    #link-fb {
+        padding: 13px 36px;
+    }
+}
+
+button.btn.btn-lg.btn-default.dropdown-toggle.btn-contribute {
+    padding: 5px 25px;
+    margin: 9px;
+}

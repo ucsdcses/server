@@ -1,0 +1,38 @@
+<!--Expects project in ng-init or onload-->
+<div class="contributors" ng-controller="contributorsPickerController">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search teammates" ng-model="query" ng-change="search()">
+    </div>
+
+    <!--Results-->
+    <div class="dropdown" ng-class="{'open': results.length}">
+        <ul class="dropdown-menu scrollable-menu">
+            <li ng-repeat="user in results">
+                <a href="#" ng-click="select(user)">
+                    <img class="img-circle" ng-show="user.facebookId" ng-src="http://graph.facebook.com/{{user.facebookId}}/picture?width=180&height=180"/>
+                    <!--Placeholder image if FB is not linked-->
+                    <div ng-hide="user.facebookId" class="placeholder-pic-sm">{{user.firstName.charAt(0)}}{{user.lastName.charAt(0)}}</div>
+                    <h5>{{user.firstName}} {{user.lastName}}</h5>
+                    <h6>{{user.email}}</h6>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h5>Team ({{project.authors.length}})</h5>
+    <!--Users in the team/selected-->
+    <div class="container">
+        <div class="row">
+        <div ng-repeat="user in project.authors">
+                <div class="chip">
+                    <img class="img-thumbnail" ng-show="user.facebookId" class="profile-picture" ng-src="http://graph.facebook.com/{{user.facebookId}}/picture?type=normal" alt="Person">
+                    <a class="close-arrow" href="#" ng-click="deselect(user)">
+                        <span class="close-btn">&times;</span>
+                    </a>
+                    <div ng-hide="user.facebookId" class="placeholder-pic-sm">{{user.firstName.charAt(0)}}{{user.lastName.charAt(0)}}</div>
+                    {{user.firstName}} {{user.lastName}}
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

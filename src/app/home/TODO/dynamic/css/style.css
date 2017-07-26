@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Garamond';
+    src: 
+        url( EBGaramond12-Regular.ttf );
+        format( 'truetype');
+    
+}
+
+body {
+    font-family: 'Garamond', serif;
+    overflow-x: hidden;
+    margin: 0;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    font-weight: 100;
+    margin: 10%;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+.row { 
+    width: 100%;
+    padding: 25px 0;
+}
+
+.title {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.inverted {
+    background: black;
+    color: white;
+}
+
+.blue {
+    background: blue;
+    color: white;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.green {
+    background: green;
+    color: white;
+}
+
+.like-list {
+    font-size: 5em;
+}
+
+.big {
+    font-size: 2em;
+    margin: 5% 0;
+    padding: 0;
+}
+
+.small { 
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.tiny {
+    font-size: 1em;
+}
+
+.huge {
+    font-size: 15em;
+    font-weight: 100;
+}
+
+.top {
+    margin-top: 5%;
+}
+
+.rules {
+    font-size: 5em;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.contents {
+    font-weight: 300;
+    font-size: 4em;
+    padding: 20px 0;
+    margin: 0 5%;
+    text-align: right;
+}
+
+.spaced {
+    margin: 10% 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.self-info {
+    font-size: 3em;
+    margin: 10%;
+}
+
+.inline-img {
+    width: 100px;
+    
+}
+
+.other-stuff {
+    font-size:4em;
+}

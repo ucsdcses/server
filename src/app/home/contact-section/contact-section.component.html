@@ -1,0 +1,40 @@
+<section id="contact">
+  <div class="section-container container">
+    <h1>Contact</h1>
+
+    <div class="contact-msg">
+      <p>Leave us a message and we'll get back to you as soon as possible.</p> <p>Don't forget to also <span class='subscribe-btn'>subscribe</span> to our newsletter and join our <a href="https://www.facebook.com/groups/ucsdcses/" target="_blank">Facebook group</a> to stay up-to-date with our latest events!</p>
+    </div>
+
+    <form method="POST" id='contact-form'>
+      <div class='contact-name contact-field'>
+        <label class='contact-label'>Name *</label>
+        <input type='text' required name='name' />
+      </div>
+
+      <div class='contact-email contact-field'>
+        <label class='contact-label'>Email *</label>
+        <input type='email' required name="_replyto" />
+      </div>
+
+      <div class='contact-content contact-field'>
+        <label class='contact-label'>Message *</label>
+        <textarea class='contact-content' required name="body"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+      </div>
+
+      <div class='contact-submit contact-field'>
+        <button class="contact-submit-btn">Submit! <i class="fa fa-paper-plane"></i></button>
+      </div>
+
+      <input type="hidden" name="_subject" value="CSES: New Message" />
+      <input type="hidden" name="_next" value="#">
+    </form>
+
+    <script>
+var contactform =  document.getElementById('contact-form');
+contactform.setAttribute('action', '//formspree.io/' + 'csesucsd' + '@' + 'gmail' + '.' + 'com');
+    </script>
+
+  </div>
+</section>

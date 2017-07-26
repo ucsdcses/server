@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Counts all the dynamically assigned IP addresses at UCSD" />
+<meta property="og:title" content="Dynamic Numbers" />
+<meta property="og:image" content="http://cses.ucsd.edu/dynamic/thumbnail.png" />
+<meta property="og:site_name" content="Dynamic Numbers" />
+<meta http-equiv="Content-Type" content="text/html;" />
+    
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+
+<title>Dynamic Numbers</title>
+</head>
+
+<body>
+    
+    <div  id="bland" class="row">
+        <h1 id="data"> </h1>
+    </div>
+
+</body>
+<script> 
+function load() {
+	$('#data').load("dynamicData.txt");
+}
+
+load();
+</script>
+</html>

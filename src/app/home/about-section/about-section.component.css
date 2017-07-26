@@ -1,0 +1,79 @@
+section#about {
+  padding: 50px 0;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  /* FOR VERTICAL PILLARS */ }
+  section#about .section-container {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center; }
+    section#about .section-container h1 {
+      color: #414141;
+      font-weight: 700; }
+    section#about .section-container p {
+      color: #414141; }
+    section#about .section-container img {
+      max-width: 90%;
+      max-height: 400px; }
+  section#about .pillar-container {
+    max-width: 800px;
+    margin: 125px auto 0 auto;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: flex; }
+    @media only screen and (max-width: 29.9375em) {
+      section#about .pillar-container {
+        margin: 90px auto 0 auto; } }
+  section#about .pillar {
+    background-color: #025878;
+    height: 250px;
+    width: 146px;
+    display: inline-block;
+    transition: 0.2s all ease;
+    border-right: 4px solid #edab18;
+    margin: 0 auto; }
+    @media only screen and (max-width: 29.9375em) {
+      section#about .pillar {
+        width: 96px;
+        height: 200px; } }
+    section#about .pillar:hover {
+      margin-top: -15px; }
+      section#about .pillar:hover h4 {
+        color: #edab18; }
+    section#about .pillar h4 {
+      color: #414141;
+      text-align: center;
+      font-weight: 400; }
+    section#about .pillar .pillar-icon {
+      position: absolute;
+      margin-top: -75px;
+      border-radius: 100%;
+      background-color: #fff;
+      border: 4px solid #025878;
+      width: 142px;
+      height: 142px;
+      transition: 0.2s all ease; }
+      @media only screen and (max-width: 29.9375em) {
+        section#about .pillar .pillar-icon {
+          width: 92px;
+          height: 92px;
+          margin-top: -50px; } }
+      section#about .pillar .pillar-icon img {
+        margin: 0 auto;
+        display: block; }
+    section#about .pillar .triangle {
+      margin-top: 175px;
+      width: 0;
+      height: 0;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-bottom: 75px solid #fff;
+      transition: 0.2s all ease; }
+      @media only screen and (max-width: 29.9375em) {
+        section#about .pillar .triangle {
+          margin-top: 150px;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 50px solid #fff; } }
+
