@@ -58,6 +58,7 @@
     "ts-helpers": "^1.1.2",
     "ts-node": "~3.0.2",
     "tslint": "^4.5.1",
+    "types": "^0.1.1",
     "typescript": "^2.3.4",
     "uuid": "^3.0.1",
     "zone.js": "^0.8.9"
@@ -72,6 +73,7 @@
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
     "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-firefox-launcher": "^1.0.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-remap-istanbul": "^0.2.1",

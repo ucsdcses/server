@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpModule } from '@angular/http';
 
 import { HomeComponent } from './home.component';
 import { SubscribeModalComponent } 
@@ -18,6 +19,9 @@ import { FooterComponent }
   from './footer/footer.component';
 import { routing } from './home.router';
 
+import { EventsSectionService } from 
+'./events-section/events-section.service';
+
 @NgModule({
   declarations: [
   HomeComponent,
@@ -28,14 +32,18 @@ import { routing } from './home.router';
   EventsSectionComponent,
   TeamSectionComponent,
   ContactSectionComponent,
-  FooterComponent
+  FooterComponent,
   ],
   imports: [
   CommonModule,
+  HttpModule,
   routing
   ],
   exports: [
   HomeComponent
+  ],
+  providers: [
+    EventsSectionService
   ]
 })
 export class HomeModule {}

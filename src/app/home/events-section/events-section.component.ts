@@ -1,12 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { EventsSectionService } from './events-section.service';
 
 @Component({
-  selector: 'events-section',
+  selector: 'app-events-section',
   templateUrl: './events-section.component.html',
-  styleUrls: ['../home.component.css', './events-section.component.css']
+  styleUrls: ['./events-section.component.css']
 })
+export class EventsSectionComponent implements OnInit {
+  private facebookEvents: Array<Event> = [];
 
-export class EventsSectionComponent {
-  constructor() {
+  constructor(private service: EventsSectionService) { }
+
+  ngOnInit() {
+    this.populateEvents();
   }
+
+  populateEvents() {
+    this.service.getFacebookEvents().subscribe((events) => {
+      this.facebookEvents = events;
+    });
+  }
+
+  getFacebookEvents() {
+    return this.facebookEvents;
+  }
+}
+
+class Event {
 }
