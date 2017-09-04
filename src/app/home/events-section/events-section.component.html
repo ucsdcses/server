@@ -1,20 +1,20 @@
 <section id="events">
   <div class="section-container container">
     <h1>Events</h1>
-    <div id="events-container">
-      <div *ngFor="let event of events">
+    <div *ngIf="facebookEvents" id="events-container">
+      <div *ngFor="let event of facebookEvents">
         <div class="event">
           <div class="event-img-container">
             <div class="event-img-overlay">
-              <h4>{{event.name}}</h4>
-              <img src="event.cover" />
+              <h4 class="no-margin">{{event.name}}</h4>
+              <img [src]="event.cover" />
             </div>
           </div>
           <p class="event-date inline"><i class="fa fa-calendar-o"></i>
-          {{event.startTime}}
+          {{event.start_time}}
           </p>
           <p class="event-time inline"><i class="fa fa-clock-o"></i>
-          {{event.hourTime}}
+          {{event.hour_time}}
           </p>
           <p class="event-location"><i class="fa fa-map-marker"></i>
           {{event.place.name}}
@@ -30,8 +30,10 @@
         </div>
       </div>
     </div>
-    <a href="https://www.facebook.com/pg/csesucsd/events" 
+    <p *ngIf="!facebookEvents" class="text-center">
+      Events could not be fetched, please try refreshing the page.
+    </p>
+    <a href="https://www.facebook.com/pg/csesucsd/events"
        class="events-archive-btn">View Archives</a>
   </div>
 </section>
-

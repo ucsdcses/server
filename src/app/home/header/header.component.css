@@ -1,54 +1,80 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
-
 header {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  height: 350px;
-  background-color: #0f1d1c;
-  background-image: url("/assets/images/header.jpg");
-  background-position: 50% 0;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-transition: 0.2s all ease; }
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 350px;
+    background-color: #0f1d1c;
+    background-image: url("/assets/images/header.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s all ease;
+}
+
 @media only screen and (max-width: 39.9375em) {
-  header {
-height: 275px; } }
+    header {
+        height: 275px;
+    }
+}
+
 header .wrapper {
-  margin-top: -50px;
-opacity: 0; }
+    margin-top: -50px;
+    opacity: 0;
+}
+
 header h1 {
-  margin-bottom: 50px;
-  font-weight: 700;
-text-shadow: 0 0 2px #414141; }
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 2px #414141;
+}
+
 header h2 {
-  font-weight: 700;
-text-shadow: 0 0 2px #414141; }
+    font-weight: 700;
+    text-shadow: 0 0 2px #414141;
+}
+
 header h4 {
-  margin-bottom: 20px;
-  color: #f5f5f9;
-  font-weight: 300;
-text-shadow: 0 0 2px #414141; }
+    margin-bottom: 20px;
+    color: #f5f5f9;
+    font-weight: 300;
+    text-shadow: 0 0 2px #414141;
+}
+
 header a.header-btn {
-  display: inline-block;
-  margin: 0 5px;
-  width: 140px;
-  height: 45px;
-  border: none;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 45px;
-  cursor: pointer;
-transition: 0.2s all ease; }
+    display: inline-block;
+    margin: 0 5px;
+    width: 140px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 45px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
 @media only screen and (max-width: 39.9375em) {
-  header a.header-btn {
-width: 115px; } }
-header a.header-btn.facebook-btn,  header a.header-btn.subscribe-btn {
-border: 2px solid #edab18; }
-header a.header-btn.facebook-btn:hover,  header a.header-btn.subscribe-btn:hover {
-  border: 2px solid #da9c11;
-background-color: #da9c11; }
+    header a.header-btn {
+        width: 115px;
+    }
+}
+
+header a.header-btn.facebook-btn,
+header a.header-btn.subscribe-btn {
+    border: 2px solid #edab18;
+}
+
+header a.header-btn.facebook-btn:hover,
+header a.header-btn.subscribe-btn:hover {
+    border: 2px solid #da9c11;
+    background-color: #da9c11;
+}
+
 @media only screen and (max-width: 39.9375em) {
-  header a.header-btn.facebook-btn,  header a.header-btn.subscribe-btn {
-font-size: 13px; } }
+    header a.header-btn.facebook-btn,
+    header a.header-btn.subscribe-btn {
+        font-size: 13px;
+    }
+}

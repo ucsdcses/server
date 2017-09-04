@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EventsSectionService } from './events-section.service';
 
 @Component({
-  selector: 'app-events-section',
+  selector: 'events-section',
   templateUrl: './events-section.component.html',
   styleUrls: ['./events-section.component.css']
 })
@@ -18,6 +18,7 @@ export class EventsSectionComponent implements OnInit {
   populateEvents() {
     this.service.getFacebookEvents().subscribe((events) => {
       this.facebookEvents = events;
+      console.log(events);
     });
   }
 
