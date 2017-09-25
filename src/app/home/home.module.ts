@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+import { TeamSectionModule }
+  from './team-section/team-section.module';
 
 import { HomeComponent } from './home.component';
 import { SubscribeModalComponent }
@@ -13,8 +17,6 @@ import { AboutSectionComponent }
   from './about-section/about-section.component';
 import { EventsSectionComponent }
   from './events-section/events-section.component';
-import { TeamSectionComponent }
-  from './team-section/team-section.component';
 import { ContactSectionComponent }
   from './contact-section/contact-section.component';
 import { FooterComponent }
@@ -32,7 +34,6 @@ import { EventsSectionService } from
     HeaderComponent,
     AboutSectionComponent,
     EventsSectionComponent,
-    TeamSectionComponent,
     ContactSectionComponent,
     FooterComponent,
   ],
@@ -40,7 +41,9 @@ import { EventsSectionService } from
     CommonModule,
     HttpModule,
     routing,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    BrowserAnimationsModule,
+    TeamSectionModule
   ],
   exports: [
     HomeComponent

@@ -1,0 +1,51 @@
+.bio {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.bio-avatar {
+  background: #f5f5f5;
+  height: 175px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.bio-name {
+  font-weight: normal;
+  margin: 5px 0 0 0;
+}
+
+.bio-link {
+  display: inline-block;
+  margin: 5px 0 0 0;
+  opacity: 0.7;
+  transition: opacity 0.3s linear;
+  width: 20px;
+  height: 20px;
+}
+
+.bio-link:focus {
+  outline: none;
+}
+
+.bio-link:hover {
+  opacity: 1;
+}
+
+.bio-link+.bio-link {
+  margin-left: 5px;
+}
+
+.bio-description {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  margin: auto;
+}

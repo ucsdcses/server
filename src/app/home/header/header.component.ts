@@ -20,7 +20,6 @@ export class HeaderComponent {
       const wrapper = $('.wrapper');
       wrapper.animate({
         opacity: 1,
-        marginTop: 0
       }, 700);
 
       // Cache selectors

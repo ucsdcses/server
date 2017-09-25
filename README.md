@@ -5,8 +5,15 @@ This project was generated with
 
 ## Development server
 
-First things first, make sure you have Node.js installed on your machine, and
-then run "npm install" in the root directory of this repo.
+### Set up
+
+First things first, make sure you have the latest Node.js installed on your
+machine, and then run "npm install" in the root directory of this repo.
+
+Afterwards, you will need the Angular 2 CLI to be able to compile the code.
+Run "npm install @angular/cli -g" to get the latest version.
+
+### Running
 
 Run `npm run serve:watch` in one terminal and `npm run build:watch` for a dev
 server, the serve command starts the server stored under /server, which provides
@@ -15,12 +22,13 @@ the typescript files stored under /src into the dist directory, which provides
 the views. Navigate to `http://localhost:2999/`. The app will automatically
 reload if you change any of the source files.
 
-> *Note:* You will need a .env file in the root directory of this project for
+### .env Setup
+You will need a .env file in the root directory of this project for
 some of the features to work properly (fetching Facebook events). The site
 should run fine without it, but in case you were wondering, an example is
 included at the bottom of this section. To get the accessToken and appSecret
-you will need to mail mbland@ucsd.edu, as they require special permissions to
-the CSES facebook page.
+you will need to mail mbland@ucsd.edu, as they require special permissions
+ to the CSES facebook page.
 
 ```javascript
 accessToken='ACCESS_TOKEN'

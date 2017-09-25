@@ -3,94 +3,15 @@
     <h1>Team</h1>
     <ul>
 
-      <li>
+      <li class="team-bio-button"
+          *ngFor="let teamMember of getBioSet().BIO_SET"
+          (click)="openBioModal(teamMember)">
         <div class="team-img-container">
-          <img src="assets/images/board/jacob.JPG" alt="CSES Team Member"/>
+          <img [src]="teamMember.getImage()" alt="CSES Team Member" />
         </div>
-        <h5 class="team-name">Jacob Davis</h5>
-        <p class="team-position">President</p>
+        <h5 class="team-name">{{teamMember.name}}</h5>
+        <p class="team-position">{{teamMember.title}}</p>
       </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/team-placeholder.jpg" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Eric Lin</h5>
-        <p class="team-position">VP External</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/rahul.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Rahul Sabnis</h5>
-        <p class="team-position">VP Internal</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/joanne.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Joanne Son</h5>
-        <p class="team-position">VP Finance</p>
-      </li>
-
-      <li> <div class="team-img-container">
-          <img src="assets/images/board/joel.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Joel Sequeira</h5>
-        <p class="team-position">Pro-Dev Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/sean.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Sean Mcentee</h5>
-        <p class="team-position">Design Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/team-placeholder.jpg" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Maxwell Bland</h5>
-        <p class="team-position">Tech Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/niral.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Niral Patel</h5>
-        <p class="team-position">PR Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/sandra.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Sandra Luo</h5>
-        <p class="team-position">Social Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/nicolas.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Nicolas Lama-Solet</h5>
-        <p class="team-position">BIC Chair</p>
-      </li>
-
-      <li>
-        <div class="team-img-container">
-          <img src="assets/images/board/anthony.JPG" alt="CSES Team Member"/>
-        </div>
-        <h5 class="team-name">Anthony Lu</h5>
-        <p class="team-position">CSE Day Chair</p>
-      </li>
-
     </ul>
   </div>
 </section>
-
