@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node ./server/server.js",
-    "start:watch": "nodemon ./server/server.js",
+    "serve": "node ./server/server.js",
+    "serve:watch": "nodemon ./server/server.js",
     "build": "ng build",
     "build:watch": "ng build --watch",
     "test": "ng test",
@@ -31,6 +31,7 @@
     "fbgraph": "^1.4.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
     "rxjs": "^5.4.2",
     "strftime": "^0.10.0",
     "zone.js": "^0.8.14"

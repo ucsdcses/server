@@ -18,7 +18,6 @@ export class EventsSectionComponent implements OnInit {
   populateEvents() {
     this.service.getFacebookEvents().subscribe((events) => {
       this.facebookEvents = events;
-      console.log(events);
     });
   }
 
