@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MdButtonModule, MdToolbarModule } from '@angular/material';
 
 import { TeamSectionModule }
   from './team-section/team-section.module';
@@ -43,7 +44,9 @@ import { EventsSectionService } from
     routing,
     Angular2FontawesomeModule,
     BrowserAnimationsModule,
-    TeamSectionModule
+    TeamSectionModule,
+    MdButtonModule,
+    MdToolbarModule
   ],
   exports: [
     HomeComponent

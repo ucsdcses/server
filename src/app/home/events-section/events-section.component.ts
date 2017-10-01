@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { EventsSectionService } from './events-section.service';
 
+import * as moment from 'moment';
+
 @Component({
   selector: 'events-section',
   templateUrl: './events-section.component.html',
   styleUrls: ['./events-section.component.css']
 })
 export class EventsSectionComponent implements OnInit {
-  private facebookEvents: Array<Event> = [];
+  private upcomingFacebookEvents: Array<Event> = [];
+  private pastFacebookEvents: Array<Event> = [];
+  private viewingUpcoming: boolean = true;
 
   constructor(private service: EventsSectionService) { }
 
@@ -17,14 +21,30 @@ export class EventsSectionComponent implements OnInit {
 
   populateEvents() {
     this.service.getFacebookEvents().subscribe((events) => {
-      this.facebookEvents = events;
+      console.log(events);
+      this.upcomingFacebookEvents =
+      events.filter((event) => moment(event.end_time).isAfter(moment()));
+      this.pastFacebookEvents =
+      events.filter((event) => moment(event.end_time).isBefore(moment()));
     });
   }
 
-  getFacebookEvents() {
-    return this.facebookEvents;
+  getUpcomingFacebookEvents() {
+    return this.upcomingFacebookEvents;
+  }
+
+  getPastFacebookEvents() {
+    return this.pastFacebookEvents;
   }
 }
 
-class Event {
+interface Event {
+  name: string;
+  cover: string;
+  start_time: string;
+  end_time: string;
+  hour_time: string;
+  description: string;
+  id: string;
+  place: { name: string; };
 }

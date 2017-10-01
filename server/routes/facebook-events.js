@@ -5,7 +5,7 @@ const graph = require('fbgraph');
 const strftime = require('strftime');
 
 // Number of events to grab for the homepage
-const NUM_EVENTS = 3;
+const NUM_EVENTS = 6;
 // CSES Page URL
 const FACEBOOK_EVENT_URL = '/186014001799312/events';
 

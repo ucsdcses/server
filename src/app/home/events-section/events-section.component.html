@@ -1,39 +1,70 @@
 <section id="events">
   <div class="section-container container">
-    <h1>Events</h1>
-    <div *ngIf="facebookEvents" id="events-container">
-      <div *ngFor="let event of facebookEvents">
-        <div class="event">
-          <div class="event-img-container">
-            <div class="event-img-overlay">
-              <h4 class="no-margin">{{event.name}}</h4>
-              <img [src]="event.cover" />
+    <h1>Our Events</h1>
+    <md-toolbar>
+      <div class="col-md-6">
+        <button class="btn btn-purple btn-border-o col-md-12" (click)="viewingUpcoming = true" [ngClass]="{'btn-purple-active': viewingUpcoming}">Upcoming Events</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-purple btn-border-o col-md-12" (click)="viewingUpcoming = false" [ngClass]="{'btn-purple-active': !viewingUpcoming}">Past Events</button>
+      </div>
+    </md-toolbar>
+    <div id="events-container">
+      <div *ngIf="viewingUpcoming">
+        <div *ngFor="let event of upcomingFacebookEvents">
+          <div class="event">
+            <div class="event-img-container">
+              <div class="event-img-overlay">
+                <h4 class="no-margin">{{event.name}}</h4>
+                <img [src]="event.cover" />
+              </div>
             </div>
+            <p class="event-date inline"><i class="fa fa-calendar-o"></i> {{event.start_time}}
+            </p>
+            <p class="event-time inline"><i class="fa fa-clock-o"></i> {{event.hour_time}}
+            </p>
+            <p class="event-location" *ngIf="event.place">
+              <i class="fa fa-map-marker"></i> {{event.place.name}}
+            </p>
+            <p class="event-info">
+              {{event.description}}
+            </p>
+            <a class="event-link-btn" href="https://www.facebook.com/events/{{event.id}}">
+             Go to Facebook Event </a>
           </div>
-          <p class="event-date inline"><i class="fa fa-calendar-o"></i>
-          {{event.start_time}}
-          </p>
-          <p class="event-time inline"><i class="fa fa-clock-o"></i>
-          {{event.hour_time}}
-          </p>
-          <p class="event-location"><i class="fa fa-map-marker"></i>
-          {{event.place.name}}
-          </p>
-          <p class="event-info">
-          {{event.description}}
-          </p>
-          <a class="event-link-btn"
-             href="https://www.facebook.com/events/{{event.id}}"
-             >
-             Go to Facebook Event
-          </a>
         </div>
+        <p *ngIf="!upcomingFacebookEvents" class="text-center">
+          Events could not be fetched, please try refreshing the page.
+        </p>
+      </div>
+      <div *ngIf="!viewingUpcoming">
+        <div *ngFor="let event of pastFacebookEvents">
+          <div class="event">
+            <div class="event-img-container">
+              <div class="event-img-overlay">
+                <h4 class="no-margin">{{event.name}}</h4>
+                <img [src]="event.cover" />
+              </div>
+            </div>
+            <p class="event-date inline"><i class="fa fa-calendar-o"></i> {{event.start_time}}
+            </p>
+            <p class="event-time inline"><i class="fa fa-clock-o"></i> {{event.hour_time}}
+            </p>
+            <p class="event-location" *ngIf="event.place">
+              <i class="fa fa-map-marker"></i> {{event.place.name}}
+            </p>
+            <p class="event-info">
+              {{event.description}}
+            </p>
+            <a class="event-link-btn" href="https://www.facebook.com/events/{{event.id}}">
+             Go to Facebook Event </a>
+          </div>
+        </div>
+        <p *ngIf="!pastFacebookEvents" class="text-center">
+          Events could not be fetched, please try refreshing the page.
+        </p>
+        <a href="https://www.facebook.com/pg/csesucsd/events" class="events-archive-btn">View Archives</a>
       </div>
     </div>
-    <p *ngIf="!facebookEvents" class="text-center">
-      Events could not be fetched, please try refreshing the page.
-    </p>
-    <a href="https://www.facebook.com/pg/csesucsd/events"
-       class="events-archive-btn">View Archives</a>
   </div>
 </section>
