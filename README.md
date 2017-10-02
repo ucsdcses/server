@@ -19,7 +19,7 @@ Run `npm run serve:watch` in one terminal and `npm run build:watch` for a dev
 server, the serve command starts the server stored under /server, which provides
 the controllers and database access routines, and the ngbuild command compiles
 the typescript files stored under /src into the dist directory, which provides
-the views. Navigate to `http://localhost:2999/`. The app will automatically
+the views. Navigate to `http://localhost:3000/`. The app will automatically
 reload if you change any of the source files.
 
 ### .env Setup
