@@ -9,9 +9,9 @@ import * as moment from 'moment';
   styleUrls: ['./events-section.component.css']
 })
 export class EventsSectionComponent implements OnInit {
-  private upcomingFacebookEvents: Array<Event> = [];
-  private pastFacebookEvents: Array<Event> = [];
-  private viewingUpcoming: boolean = true;
+  public upcomingFacebookEvents: Array<Event> = [];
+  public pastFacebookEvents: Array<Event> = [];
+  public viewingUpcoming: boolean = true;
 
   constructor(private service: EventsSectionService) { }
 
