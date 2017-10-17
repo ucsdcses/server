@@ -129,6 +129,18 @@ class BioSet {
           imageUrl: null
         }
       }
+    ),
+    new Bio(
+      {
+        name: 'Purag Moumdjian',
+        title: 'Projects Chair',
+        smallQuote: '"Resident open source slacktivist."',
+        links: {
+          githubUrl: 'github.com/purag',
+          mailToUrl: 'mailto:purag@ucsd.edu',
+          imageUrl: null
+        }
+      }
     )
   ];
 }
