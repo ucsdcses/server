@@ -212,3 +212,7 @@ section#events .section-container .events-archive-btn:hover {
   border-color: #9b59b6;
   color: #9b59b6;
 }
+
+.row {
+  margin-right: 0;
+}

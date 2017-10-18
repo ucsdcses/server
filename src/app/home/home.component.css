@@ -16,6 +16,11 @@ html {
     /* 2 */
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
 
 /**
  * Remove default margin.
@@ -813,4 +818,8 @@ section:not(:last-of-type):after {
 
 .container h1 {
     margin-bottom: 15px;
+}
+
+.viewport-width {
+  max-width: 100vw;
 }

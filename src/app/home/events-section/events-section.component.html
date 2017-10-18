@@ -1,14 +1,14 @@
 <section id="events">
   <div class="section-container container">
     <h1>Our Events</h1>
-    <md-toolbar>
+    <div class="row">
       <div class="col-md-6">
-        <button class="btn btn-purple btn-border-o col-md-12" (click)="viewingUpcoming = true" [ngClass]="{'btn-purple-active': viewingUpcoming}">Upcoming Events</button>
+        <button class="btn btn-purple btn-border-o col-md-12 col-xs-12" (click)="viewingUpcoming = true" [ngClass]="{'btn-purple-active': viewingUpcoming}">Upcoming Events</button>
       </div>
       <div class="col-md-6">
-        <button class="btn btn-purple btn-border-o col-md-12" (click)="viewingUpcoming = false" [ngClass]="{'btn-purple-active': !viewingUpcoming}">Past Events</button>
+        <button class="btn btn-purple btn-border-o col-md-12 col-xs-12" (click)="viewingUpcoming = false" [ngClass]="{'btn-purple-active': !viewingUpcoming}">Past Events</button>
       </div>
-    </md-toolbar>
+    </div>
     <div id="events-container">
       <div *ngIf="viewingUpcoming">
         <div *ngFor="let event of upcomingFacebookEvents">
