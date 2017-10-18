@@ -141,7 +141,20 @@ class BioSet {
           imageUrl: null
         }
       }
+      ),
+    new Bio(
+      {
+        name: 'Anthony Lu',
+        title: 'VP External',
+        smallQuote: '"I'm a ghost."',
+        links: {
+          githubUrl: 'github.com/anl176',
+          mailToUrl: 'mailto:anl176@ucsd.edu',
+          imageUrl: null
+        }
+      }
     )
+
   ];
 }
 
