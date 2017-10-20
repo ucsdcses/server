@@ -13,8 +13,32 @@ class BioSet {
                 title: 'President',
                 smallQuote: '"I can touch my nose with my tongue!"',
                 links: {
-                    githubUrl: 'github.com/rahulsabnis',
+                    githubUrl: 'https://github.com/rahulsabnis',
                     mailToUrl: 'mailto:rssabnis@ucsd.edu',
+                    imageUrl: null,
+                }
+            }
+        ),
+        new Bio(
+            {
+                name: 'Anthony Lu',
+                title: 'VP External',
+                smallQuote: '"I\'m a ghost."',
+                links: {
+                    githubUrl: 'https://github.com/anl176',
+                    mailToUrl: 'mailto:anl176@ucsd.edu',
+                    imageUrl: null
+                }
+            }
+        ),
+        new Bio(
+            {
+                name: 'Sean',
+                title: 'VP Internal',
+                smallQuote: '"Lover of all things linear."',
+                links: {
+                    githubUrl: null,
+                    mailToUrl: 'mailto:smcentee@ucsd.edu',
                     imageUrl: null,
                 }
             }
@@ -31,15 +55,27 @@ class BioSet {
                 }
             }
         ),
-        new Bio( // Joanne
+        new Bio(
             {
-                name: 'Joanne Son',
-                title: 'Outreach Chair',
-                smallQuote: '"Will code for food"',
+                name: 'Megan',
+                title: 'ProDev Chair',
+                smallQuote: '“Photographer and Board Game Enthusiast “',
                 links: {
-                    githubUrl: 'github.com/joannegaeunson',
-                    mailToUrl: 'mailto:jos047@ucsd.edu',
-                    imageUrl: null
+                    githubUrl: 'https://github.com/megan-m-wang',
+                    mailToUrl: 'mailto:mmw022@ucsd.edu',
+                    imageUrl: null,
+                }
+            }
+        ),
+        new Bio( // Sandra
+            {
+                name: "Sandra Luo",
+                title: "ProDev Chair",
+                smallQuote: '"Live life less out of habit and more out of intent."',
+                links: {
+                    githubUrl: "https://github.com/sandrahluo",
+                    mailToUrl: "mailto:hello@sandraluo.com",
+                    imageUrl: null // Don't worry about this one yet.
                 }
             }
         ),
@@ -49,7 +85,7 @@ class BioSet {
                 title: 'Design Chair',
                 smallQuote: '"I overthink things like this quote."',
                 links: {
-                    githubUrl: 'github.com/niral-patel',
+                    githubUrl: 'https://github.com/niral-patel',
                     mailToUrl: 'mailto: ndp002@ucsd.edu',
                     imageUrl: null,
                 }
@@ -57,13 +93,37 @@ class BioSet {
         ),
         new Bio(
             {
-                name: 'Sean',
-                title: 'VP Internal',
-                smallQuote: '"Lover of all things linear."',
+                name: 'Maxwell Bland',
+                title: 'Technologies Chair',
+                smallQuote: '"Here to do things for free."',
                 links: {
-                    githubUrl: null,
-                    mailToUrl: 'mailto:smcentee@ucsd.edu',
+                    githubUrl: 'https://github.com/maxwell-bland',
+                    mailToUrl: 'mailto:mbland@ucsd.edu',
+                    imageUrl: null
+                }
+            }
+        ),
+        new Bio(
+            {
+                name: 'Emily',
+                title: 'Social Chair',
+                smallQuote: '"Excited to meet you guys at all our events!"',
+                links: {
+                    githubUrl: 'https://github.com/heejungemily',
+                    mailToUrl: 'mailto:hes018@ucsd.edu',
                     imageUrl: null,
+                }
+            }
+        ),
+        new Bio( // Joanne
+            {
+                name: 'Joanne Son',
+                title: 'Outreach Chair',
+                smallQuote: '"Will code for food"',
+                links: {
+                    githubUrl: 'https://github.com/joannegaeunson',
+                    mailToUrl: 'mailto:jos047@ucsd.edu',
+                    imageUrl: null
                 }
             }
         ),
@@ -79,83 +139,19 @@ class BioSet {
                 }
             }
         ),
-        new Bio( // Sandra
-            {
-                name: "Sandra Luo",
-                title: "Professional Development Chair",
-                smallQuote: '"Live life less out of habit and more out of intent."',
-                links: {
-                    githubUrl: "https://github.com/sandrahluo",
-                    mailToUrl: "mailto:hello@sandraluo.com",
-                    imageUrl: null // Don't worry about this one yet.
-                }
-            }
-        ),
-        new Bio(
-            {
-                name: 'Emily',
-                title: 'Social Chair',
-                smallQuote: '"Excited to meet you guys at all our events!"',
-                links: {
-                    githubUrl: 'github.com/heejungemily',
-                    mailToUrl: 'mailto:hes018@ucsd.edu',
-                    imageUrl: null,
-                }
-            }
-        ),
-        // new Bio( // Purag
-        //
-        // ),
-        new Bio(
-            {
-                name: 'Megan',
-                title: 'ProDev Co- Chair',
-                smallQuote: '“Photographer and Board Game Enthusiast “',
-                links: {
-                    githubUrl: 'github.com/megan-m-wang',
-                    mailToUrl: 'mailto:mmw022@ucsd.edu',
-                    imageUrl: null,
-                }
-            }
-        ),
-        new Bio(
-            {
-                name: 'Maxwell Bland',
-                title: 'Technologies Chair',
-                smallQuote: '"Here to do things for free."',
-                links: {
-                    githubUrl: 'github.com/maxwell-bland',
-                    mailToUrl: 'mailto:mbland@ucsd.edu',
-                    imageUrl: null
-                }
-            }
-        ),
         new Bio(
             {
                 name: 'Purag Moumdjian',
                 title: 'Projects Chair',
                 smallQuote: '"Resident open source slacktivist."',
                 links: {
-                    githubUrl: 'github.com/purag',
+                    githubUrl: 'https://github.com/purag',
                     mailToUrl: 'mailto:purag@ucsd.edu',
                     imageUrl: null
                 }
             }
-        ),
-        new Bio(
-            {
-                name: 'Anthony Lu',
-                title: 'VP External',
-                smallQuote: '"I\'m a ghost."',
-        links: {
-                githubUrl: 'github.com/anl176',
-                mailToUrl: 'mailto:anl176@ucsd.edu',
-                imageUrl: null
-            }
-      }
-    )
-
-  ];
+        )
+    ];
 }
 
 export { BioSet }
