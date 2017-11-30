@@ -21,7 +21,6 @@ export class EventsSectionComponent implements OnInit {
 
   populateEvents() {
     this.service.getFacebookEvents().subscribe((events) => {
-      console.log(events);
       this.upcomingFacebookEvents =
       events.filter((event) => moment(event.end_time).isAfter(moment()));
       this.pastFacebookEvents =
