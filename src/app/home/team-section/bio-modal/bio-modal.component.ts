@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MdDialog, MD_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
 
 import { Bio } from '../bio';
 
@@ -9,5 +9,5 @@ import { Bio } from '../bio';
   styleUrls: ['./bio-modal.component.css']
 })
 export class BioModalComponent {
-  constructor(@Inject(MD_DIALOG_DATA) public bio: Bio) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public bio: Bio) { }
 }

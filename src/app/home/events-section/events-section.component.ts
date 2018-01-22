@@ -17,9 +17,6 @@ export class EventsSectionComponent implements OnInit {
 
   ngOnInit() {
     this.populateEvents();
-    if (upcomingFacebookEvents.length == 0){
-      viewingUpcoming = false;
-    }
   }
 
   populateEvents() {
