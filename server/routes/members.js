@@ -7,53 +7,35 @@ const mongodb = require('mongodb');
 /* const NUM_EVENTS = 6; */
 // CSES Page URL
 /* const FACEBOOK_EVENT_URL = '/186014001799312/events'; */
-const DB_URL = 'mongodb://localhost:27017/members'
+const DB_URL = 'mongodb://localhost:27017/members';
 
 /* GET Member Data. */
 router.get('/', (req, res) => {
-
+res.send([]);
+/*
     // grab members from cses page
     var MongoClient = mongodb.MongoClient;
 
     MongoClient.connect(DB_URL,function(err,db){
         // Let the front end component handle any errors
         if (err) {
-            res.send(null);
+            res.send(err);
             return;
         }
 
         //Grab all the members info and format them
         var collection = db.collection('members');
-
+        console.log("here");
         collection.find({}).toArray(function(err,member){
             // Let the front end component handle any errors
             if (err) {
                 res.send(null);
                 return;
             }
-
+            console.log("here");
             res.send(member);
-            });
         });
-    });
+    });*/
 });
-
-//format the member info into different fields
-function formatMembersInfo(members, res) {
-    // We will create an array of members to send back to the front end
-    var memberArray = [];
-
-    members.forEach((person, index) => {
-
-        // Member description and formatting
-
-
-        // Set the index properly
-        memberArray.push(person);
-    });
-
-    memberArray.reverse();
-    return eventArray;
-}
 
 module.exports = router;
