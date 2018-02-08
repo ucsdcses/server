@@ -6,6 +6,8 @@
 
 # dependencies
 /node_modules
+/server/node_modules
+/server/data
 /bower_components
 
 # IDEs and editors
