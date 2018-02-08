@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MdButtonModule, MdToolbarModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule } from '@angular/material';
 
 import { TeamSectionModule }
   from './team-section/team-section.module';
@@ -27,6 +27,8 @@ import { routing } from './home.router';
 import { EventsSectionService } from
   './events-section/events-section.service';
 
+import { StaffComponent } from '../staff/staff.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -37,6 +39,7 @@ import { EventsSectionService } from
     EventsSectionComponent,
     ContactSectionComponent,
     FooterComponent,
+    StaffComponent
   ],
   imports: [
     CommonModule,
@@ -45,8 +48,8 @@ import { EventsSectionService } from
     Angular2FontawesomeModule,
     BrowserAnimationsModule,
     TeamSectionModule,
-    MdButtonModule,
-    MdToolbarModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   exports: [
     HomeComponent

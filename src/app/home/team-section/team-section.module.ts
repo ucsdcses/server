@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material';
 import { AngularFontAwesomeModule } from
 'angular-font-awesome/angular-font-awesome';
 
@@ -20,7 +20,7 @@ import { BioModalComponent } from './bio-modal/bio-modal.component';
   ],
   imports: [
     CommonModule,
-    MdDialogModule,
+    MatDialogModule,
     AngularFontAwesomeModule
   ],
 })

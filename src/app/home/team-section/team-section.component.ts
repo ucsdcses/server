@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MdDialog } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { BioSet } from './bio-set';
 import { Bio } from './bio';
 import { BioModalComponent } from './bio-modal/bio-modal.component';
@@ -15,7 +15,7 @@ import { BioModalComponent } from './bio-modal/bio-modal.component';
  * a team member, a dialog with their bio info will pop up.
  */
 export class TeamSectionComponent {
-  constructor(public bioDialog: MdDialog) { }
+  constructor(public bioDialog: MatDialog) { }
 
   /**
    * Opens a bio modal. Called when one of the people in the team section

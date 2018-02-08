@@ -17,17 +17,26 @@ export class EventsSectionComponent implements OnInit {
 
   ngOnInit() {
     this.populateEvents();
-    if (upcomingFacebookEvents.length == 0){
-      viewingUpcoming = false;
-    }
   }
 
+  /**
+   * Populates the facebook events on the page by making a callback to the
+   * events service.
+   * @return None, sets the state of the page.
+   */
   populateEvents() {
     this.service.getFacebookEvents().subscribe((events) => {
+
+      // Get upcoming events, if there are none, make previous events the
+      // default view
       this.upcomingFacebookEvents =
-      events.filter((event) => moment(event.end_time).isAfter(moment()));
+        events.filter((event) => moment(event.end_time).isAfter(moment()));
+      if (this.upcomingFacebookEvents.length == 0) {
+        this.viewingUpcoming = false;
+      }
+
       this.pastFacebookEvents =
-      events.filter((event) => moment(event.end_time).isBefore(moment()));
+        events.filter((event) => moment(event.end_time).isBefore(moment()));
     });
   }
 
