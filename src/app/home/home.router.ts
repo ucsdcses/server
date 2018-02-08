@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 import { StaffComponent } from '../staff/staff.component';
 
 const routes: Route[] = [
-	{
+  {
     path: 'staff',
     pathMatch: 'full',
     component: StaffComponent

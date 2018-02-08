@@ -27,8 +27,6 @@ import { routing } from './home.router';
 import { EventsSectionService } from
   './events-section/events-section.service';
 
-import { StaffComponent } from '../staff/staff.component';
-
 @NgModule({
   declarations: [
     HomeComponent,
@@ -38,8 +36,7 @@ import { StaffComponent } from '../staff/staff.component';
     AboutSectionComponent,
     EventsSectionComponent,
     ContactSectionComponent,
-    FooterComponent,
-    StaffComponent
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -52,7 +49,8 @@ import { StaffComponent } from '../staff/staff.component';
     MatToolbarModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   providers: [
     EventsSectionService
