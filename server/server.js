@@ -10,6 +10,7 @@ require('dotenv').config({silent: true});
 
 // Get our API routes
 const facebookEvents = require('./routes/facebook-events');
+const membersInfo = require('./routes/members');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, '../dist/assets/legacy-pages')));
 
 // Set our api routes
 app.use('/api/facebook-events', facebookEvents);
+app.use('/api/members',membersInfo);
 
 app.get('/devfair', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/devfair/index.html'));

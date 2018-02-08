@@ -32,8 +32,7 @@ router.get('/', (req, res) => {
                 return;
             }
 
-            formatMembersInfo(member).then((memberArray)=>{
-                res.send(memberArray);
+            res.send(member);
             });
         });
     });
@@ -47,11 +46,7 @@ function formatMembersInfo(members, res) {
     members.forEach((person, index) => {
 
         // Member description and formatting
-        person['description'] = person['description'].split('\n')[0];
-        person['hour_time'] = strftime('%l:%M %P',
-            new Date(happening['start_time']));
-        person['start_time'] = strftime('%B %d, %Y',
-            new Date(happening['start_time']));
+
 
         // Set the index properly
         memberArray.push(person);
