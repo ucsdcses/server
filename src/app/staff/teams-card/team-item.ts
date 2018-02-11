@@ -1,3 +1,6 @@
+import { StaffComponent } from '../../staff/staff.component';
+
+
 /**
  * Contains team-specific data
  */
@@ -30,6 +33,7 @@ class TeamItem extends TeamData {
   }
 
   buttonClicked() {
+    
   }
 }
 

@@ -4,6 +4,7 @@ import { StaffComponent } from './staff.component';
 
 import { HomeModule } from '../home/home.module';
 import { TeamsCardComponent } from './teams-card/teams-card.component';
+import { TeamsJumbotronComponent } from './teams-jumbotron/teams-jumbotron.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { TeamsCardComponent } from './teams-card/teams-card.component';
   ],
   declarations: [
   	StaffComponent,
-  	TeamsCardComponent
+  	TeamsCardComponent,
+  	TeamsJumbotronComponent
   ],
   exports: [
     StaffComponent

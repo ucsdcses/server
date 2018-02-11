@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { TeamItem } from './team-item';
 
 import { StaffDataService } from '../../staffdata.service';
@@ -10,7 +10,12 @@ import { StaffDataService } from '../../staffdata.service';
 })
 export class TeamsCardComponent implements OnInit {
 
+  @Output() tabModeChanger:EventEmitter<[TeamItem, Array<TeamItem>, boolean]> = 
+                            new EventEmitter<[TeamItem, Array<TeamItem>, boolean]>();
+
 	public teamList: Array<Array<TeamItem>>;
+  simpilfiedList: Array<TeamItem>;
+  teamItem: TeamItem;
   staffService: StaffDataService;
 
   constructor(staffService: StaffDataService) {
@@ -18,8 +23,9 @@ export class TeamsCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("hi");
-    this.teamList = this.staffService.fetchTeamsFromJSON();
+    let result = this.staffService.fetchTeamsFromJSON();
+    this.teamList = result[0];
+    this.simpilfiedList = result[1];
   }
 
   getTeams() {
@@ -27,6 +33,8 @@ export class TeamsCardComponent implements OnInit {
   }
 
   onBtnClick(item: TeamItem) {
+    this.teamItem = item;
+    this.tabModeChanger.emit([item, this.simpilfiedList, false]);
   	item.buttonClicked();
   }
 }

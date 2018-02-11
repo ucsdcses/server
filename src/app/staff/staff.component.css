@@ -1,12 +1,12 @@
-/*
- Styling for teams-card-component
- */
-
 * {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
 }
+
+/*
+ Styling for teams-card-component
+--------------------------------------------------------------------*/
 
 .nav-separator {
 	height: 96px;
@@ -36,3 +36,10 @@
 .card-img-top {
 	width: 100%;
 } 
+
+/*---------------------------------------------------------------------*/
+
+/*
+Styling for teams-jumbotron
+-----------------------------------------------------------------------*/
+

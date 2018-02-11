@@ -1,3 +1,8 @@
 <nav-component></nav-component>	
 <div class="nav-separator"></div>
-<app-teams-card></app-teams-card>
+<ng-container *ngIf="tabMode; else specificView">
+	<app-teams-card (tabModeChanger)="tabModeChanger($event)"></app-teams-card>
+</ng-container>
+<ng-template #specificView>
+	<app-teams-jumbotron [item] = "teamItem" [teamList] = "teamList"></app-teams-jumbotron>
+</ng-template>

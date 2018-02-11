@@ -56,7 +56,7 @@ export class StaffDataService {
    * Fetches team details from a Google spreadsheet. To be done. Currently, using
    * hardcoded data.
    */
-  fetchTeamsFromJSON():Array<Array<TeamItem>> {
+  fetchTeamsFromJSON():[Array<Array<TeamItem>>, Array<TeamItem>] {
   	this.http.get('TODO - replace this with nodejs JSON API').subscribe(res => {
   	});
 
@@ -68,7 +68,6 @@ export class StaffDataService {
   		i++;
   		this.teamBlocks.unshift(this.teamList.slice(sum, sum + i));
   	}
-
-  	return this.teamBlocks;
+  	return [this.teamBlocks, this.teamList];
   }
 }
