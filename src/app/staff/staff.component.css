@@ -12,13 +12,13 @@
 	height: 96px;
 }
 
-.card-division {
-	margin: 16px auto;
-	padding: 4px;
+.card-cover {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .card {
-	margin: 0 16px;
+	margin: 16px 16px;
 	width: 32rem;
 	background-color: #ecb213;
 	float: left;
@@ -36,10 +36,3 @@
 .card-img-top {
 	width: 100%;
 } 
-
-/*---------------------------------------------------------------------*/
-
-/*
-Styling for teams-jumbotron
------------------------------------------------------------------------*/
-

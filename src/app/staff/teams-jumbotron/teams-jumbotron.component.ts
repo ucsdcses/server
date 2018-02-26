@@ -5,7 +5,7 @@ import {TeamItem} from '../teams-card/team-item';
 @Component({
   selector: 'app-teams-jumbotron',
   templateUrl: './teams-jumbotron.component.html',
-  styleUrls: ['../staff.component.css']
+  styleUrls: ['./teams-jumbotron.component.css']
 })
 export class TeamsJumbotronComponent implements OnInit {
 

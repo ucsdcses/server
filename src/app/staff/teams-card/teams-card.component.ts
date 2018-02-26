@@ -13,8 +13,7 @@ export class TeamsCardComponent implements OnInit {
   @Output() tabModeChanger:EventEmitter<[TeamItem, Array<TeamItem>, boolean]> = 
                             new EventEmitter<[TeamItem, Array<TeamItem>, boolean]>();
 
-	public teamList: Array<Array<TeamItem>>;
-  simpilfiedList: Array<TeamItem>;
+  teamList: Array<TeamItem>;
   teamItem: TeamItem;
   staffService: StaffDataService;
 
@@ -23,9 +22,7 @@ export class TeamsCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    let result = this.staffService.fetchTeamsFromJSON();
-    this.teamList = result[0];
-    this.simpilfiedList = result[1];
+    this.teamList = this.staffService.fetchTeamsFromJSON();
   }
 
   getTeams() {
@@ -34,7 +31,7 @@ export class TeamsCardComponent implements OnInit {
 
   onBtnClick(item: TeamItem) {
     this.teamItem = item;
-    this.tabModeChanger.emit([item, this.simpilfiedList, false]);
+    this.tabModeChanger.emit([item, this.teamList, false]);
   	item.buttonClicked();
   }
 }

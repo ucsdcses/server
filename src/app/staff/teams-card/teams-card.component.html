@@ -1,5 +1,5 @@
-<div *ngFor="let teams of getTeams()" class="card-division">
-  <div *ngFor="let item of teams" class="card">
+<div class="card-cover">
+  <div *ngFor="let item of getTeams()" class="card">
     <img class="card-img-top" [src] = item.imgPath alt="Card image cap">
     <div class="card-block card-specific-border">
       <h4 class="card-title">{{item.title}}</h4>
@@ -16,5 +16,4 @@
       </button>
     </div>
   </div>
-  <div style="display: block; clear: both;"></div>
 </div>

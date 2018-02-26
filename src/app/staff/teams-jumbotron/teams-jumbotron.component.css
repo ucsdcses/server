@@ -1,0 +1,24 @@
+.card {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.d-header {
+	background: #FFC107;
+}
+
+.floater-image {
+	float: left;
+	height: 100%;
+	margin-right: 4px;
+}
+
+.clear {
+	clear: both;
+}
+
+.header-text {
+	padding: 4px 4px 4px 0;
+	color: white;
+	font-weight: bold;
+}
