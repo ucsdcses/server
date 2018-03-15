@@ -10,9 +10,21 @@ require('dotenv').config({silent: true});
 // Get our API routes
 const facebookEvents = require('./routes/facebook-events');
 const membersInfo = require('./routes/members');
-const newSeat = require('./routes/newSeats')
+const labs = require('./routes/labs');
+const mongodb = require('mongodb');
 
 const app = express();
+
+const DB_URL = 'mongodb://localhost:27017/members';
+
+//connects mongoDB/mongoose to our database we will store into
+mongodb.MongoClient.connect(DB_URL, function(err,db){
+  // Let the front end component handle any errors
+  if (err) {
+      console.log("Error on Connecting to the Database");
+      return;
+  }
+});
 
 // Parsers for POST data
 app.use(bodyParser.json());
@@ -25,7 +37,7 @@ app.use(express.static(path.join(__dirname, '../dist/assets/legacy-pages')));
 // Set our api routes
 app.use('/api/facebook-events', facebookEvents);
 app.use('/api/members',membersInfo);
-app.use('/api/newSeat', newSeat);
+app.use('/api/labs', labs);
 
 app.get('/devfair', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/devfair/index.html'));
