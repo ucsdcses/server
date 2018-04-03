@@ -8,7 +8,7 @@ import { TeamItem } from './teams-card/team-item';
 })
 export class StaffComponent implements OnInit {
 
-	public tabMode:boolean = false;
+	public tabMode:boolean = true;
 	public teamItem:TeamItem;
 	public teamList: Array<TeamItem>;
 
