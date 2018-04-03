@@ -18,7 +18,7 @@ export class StaffComponent implements OnInit {
   ngOnInit() {
   }
 
-  tabModeChanger(tabDetails: [TeamItem, Array<TeamItem>, boolean]) {    
+  tabModeChanger(tabDetails: [TeamItem, Array<TeamItem>, boolean]) {
   	this.teamItem = tabDetails[0];
   	this.teamList = tabDetails[1];
   	this.tabMode = tabDetails[2];

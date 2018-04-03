@@ -1,16 +1,55 @@
-<div class="card" >
-  <div class="card-block">
-  	<div class="d-block d-header">
-	    <div class = "floater-image"> 
-	    	<img src = "../../../assets/images/team-details-placeholder.jpeg" class="rounded" alt="...">
-	    </div>
-	    <div class="header-text">
-	    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-	    </div>
-	    <div class="clear"></div>
-    </div>
-    <span class="d-block">
-	    Hello again!
-    </span>
-  </div>
+<div class="wrapper">
+	
+	<nav id="sidebar">
+			<!-- Sidebar Header -->
+			<div class="sidebar-header">
+					<h3>Teams</h3>
+					<strong>T</strong>
+			</div>
+
+			<!-- Sidebar Links -->
+			<ul class="list-unstyled components">
+					<li class="active">
+							<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+									<i class="glyphicon glyphicon-home"></i>
+									Home
+							</a>
+					</li>
+					<li>
+							<a href="#">
+									<i class="glyphicon glyphicon-briefcase"></i>
+									About
+							</a>
+							<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+									<i class="glyphicon glyphicon-duplicate"></i>
+									Pages
+							</a>
+							<ul class="collapse list-unstyled" id="pageSubmenu">
+									<li><a href="#">Page 1</a></li>
+									<li><a href="#">Page 2</a></li>
+									<li><a href="#">Page 3</a></li>
+							</ul>
+					</li>
+					<li>
+							<a href="#">
+									<i class="glyphicon glyphicon-link"></i>
+									Portfolio
+							</a>
+					</li>
+					<li>
+							<a href="#">
+									<i class="glyphicon glyphicon-send"></i>
+									Contact
+							</a>
+					</li>
+			</ul>
+	</nav>
+
+	<div id="content">
+			<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+					<i class="glyphicon glyphicon-align-left"></i>
+					Toggle Sidebar
+			</button>
+	</div>
+
 </div>

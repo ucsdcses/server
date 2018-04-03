@@ -1,24 +1,66 @@
-.card {
-	width: 60%;
-	margin: 0 auto;
+.wrapper {
+	height: 800px;
+	background: #FAFAFA;
 }
 
-.d-header {
-	background: #FFC107;
-}
-
-.floater-image {
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
 	float: left;
 	height: 100%;
-	margin-right: 4px;
-}
-
-.clear {
-	clear: both;
-}
-
-.header-text {
-	padding: 4px 4px 4px 0;
+	background: #178CB0;
 	color: white;
-	font-weight: bold;
+	padding-left: 8px;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar .sidebar-header strong {
+    display: none;
+	margin: 0 32px;
+}
+#sidebar.active .sidebar-header h3 {
+    display: none;
+	margin: 0 32px;
+}
+#sidebar.active .sidebar-header strong {
+	display: block;
+	margin: 0 32px;
+}
+
+#sidebar ul li a {
+	text-align: left;
+	display: block;
+	color: white;
+    margin: 16px 0;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+	display: block;
+	color: white;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
 }
