@@ -32,6 +32,8 @@ res.send([]);
                 res.send(null);
                 return;
             }
+
+
             console.log("here");
             res.send(member);
         });
