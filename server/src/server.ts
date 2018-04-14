@@ -1,15 +1,14 @@
+import * as http from 'http';
 // Get dependencies
-const express = require('express');
+import * as express from "express";
 const path = require('path');
-const http = require('http');
 const bodyParser = require('body-parser');
 
 // Set up secret configs
-require('dotenv').config({silent: true});
+require('dotenv').config({ silent: true });
 
 // Get our API routes
-const facebookEvents = require('./routes/facebook-events');
-const membersInfo = require('./routes/members');
+import Events from './routes/events';
 
 const app = express();
 
@@ -22,27 +21,26 @@ app.use(express.static(path.join(__dirname, '../dist')));
 app.use(express.static(path.join(__dirname, '../dist/assets/legacy-pages')));
 
 // Set our api routes
-app.use('/api/facebook-events', facebookEvents);
-app.use('/api/members',membersInfo);
+app.use('/api/events', Events.getEvents);
 
-app.get('/devfair', (req, res) => {
+app.get('/devfair', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/devfair/index.html'));
 });
 
-app.get('/cseday', (req, res) => {
+app.get('/cseday', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/cseday/index.html'));
 });
 
-app.get('/cselabs', (req, res) => {
+app.get('/cselabs', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/cselabs/index.html'));
 });
 
-app.get('/late-night', (req, res) => {
+app.get('/late-night', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/late-night/index.html'));
 });
 
 // Catch all other routes and return the index file
-app.get('*', (req, res) => {
+app.get('*', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 

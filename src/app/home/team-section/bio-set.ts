@@ -15,7 +15,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/rahulsabnis',
                     mailToUrl: 'mailto:rssabnis@ucsd.edu',
-                    imageUrl: null,
+                    imageUrl: "",
                 }
             }
         ),
@@ -27,7 +27,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/anl176',
                     mailToUrl: 'mailto:anl176@ucsd.edu',
-                    imageUrl: null
+                    imageUrl: ""
                 }
             }
         ),
@@ -37,9 +37,9 @@ class BioSet {
                 title: 'VP Internal',
                 smallQuote: '"Lover of all things linear."',
                 links: {
-                    githubUrl: null,
+                    githubUrl: "",
                     mailToUrl: 'mailto:smcentee@ucsd.edu',
-                    imageUrl: null,
+                    imageUrl: "",
                 }
             }
         ),
@@ -51,7 +51,7 @@ class BioSet {
                 links: {
                     githubUrl: "https://github.com/jsdavis",
                     mailToUrl: "mailto:jsd006@ucsd.edu",
-                    imageUrl: null
+                    imageUrl: ""
                 }
             }
         ),
@@ -63,7 +63,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/megan-m-wang',
                     mailToUrl: 'mailto:mmw022@ucsd.edu',
-                    imageUrl: null,
+                    imageUrl: "",
                 }
             }
         ),
@@ -75,7 +75,7 @@ class BioSet {
                 links: {
                     githubUrl: "https://github.com/sandrahluo",
                     mailToUrl: "mailto:hello@sandraluo.com",
-                    imageUrl: null // Don't worry about this one yet.
+                    imageUrl: "" // Don't worry about this one yet.
                 }
             }
         ),
@@ -87,7 +87,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/niral-patel',
                     mailToUrl: 'mailto: ndp002@ucsd.edu',
-                    imageUrl: null,
+                    imageUrl: "",
                 }
             }
         ),
@@ -99,7 +99,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/maxwell-bland',
                     mailToUrl: 'mailto:mbland@ucsd.edu',
-                    imageUrl: null
+                    imageUrl: ""
                 }
             }
         ),
@@ -111,7 +111,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/heejungemily',
                     mailToUrl: 'mailto:hes018@ucsd.edu',
-                    imageUrl: null,
+                    imageUrl: "",
                 }
             }
         ),
@@ -123,7 +123,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/joannegaeunson',
                     mailToUrl: 'mailto:jos047@ucsd.edu',
-                    imageUrl: null
+                    imageUrl: ''
                 }
             }
         ),
@@ -135,7 +135,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/nlamasol',
                     mailToUrl: 'mailto:nlamasol@ucsd.edu',
-                    imageUrl: null
+                    imageUrl: ''
                 }
             }
         ),
@@ -147,7 +147,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/purag',
                     mailToUrl: 'mailto:purag@ucsd.edu',
-                    imageUrl: null
+                    imageUrl: ''
                 }
             }
         )

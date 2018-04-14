@@ -1,6 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+/server_dist
 /dist
 /tmp
 
@@ -8,6 +9,7 @@
 /node_modules
 /server/node_modules
 /server/data
+/server/.tags
 /bower_components
 
 # IDEs and editors

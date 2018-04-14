@@ -23,7 +23,7 @@ export class HeaderComponent {
       }, 700);
 
       // Cache selectors
-      let lastId;
+      let lastId: string;
       const nav = $('.nav-right-collapse, .nav-right');
       const navHeight = 60;
 
@@ -41,46 +41,67 @@ export class HeaderComponent {
       /* Easing scroll animation to the correct part of the page */
       links.on('click', function(e, i) {
         const href = $(e.target).attr('href');
-        const offsetTop = (href === '#') ? 0 : $(href).offset().top - navHeight + 10;
-        $('html, body').stop().animate({
-          scrollTop: offsetTop
-        }, 300);
-        e.preventDefault();
+        let offset = $(href).offset();
+        // Ensure the offset is not undef.
+        if (offset) {
+          const offsetTop = (href === '#') ? 0 : offset.top - navHeight + 10;
+          $('html, body').stop().animate({
+            scrollTop: offsetTop
+          }, 300);
+          e.preventDefault();
+        }
       });
 
       /* Fix navbar to top */
       $(document).on('scroll', () => {
         const scrollTop = $(document).scrollTop();
-        if (scrollTop > 60) {
-          $('nav').addClass('fixed');
-        }
-        else {
-          $('nav').removeClass('fixed');
+        if (scrollTop) { // Handle undefined scrolltop
+          if (scrollTop > 60) {
+            $('nav').addClass('fixed');
+          }
+          else {
+            $('nav').removeClass('fixed');
+          }
         }
       });
 
       /* Highlight current nav item */
       $(document).on('scroll', function(e) {
 
+        let scrollTop = $(e.target).scrollTop();
+        // Handle undefined event
+        if (!scrollTop) { scrollTop = 0; }
         // Get container scroll position
-        const fromTop = $(e.target).scrollTop() + navHeight + 25;
+        const fromTop = scrollTop + navHeight + 25;
 
         // Get id of current scroll item
         var cur = scrollLinks.map((index) => {
-          const linkTop = $(scrollLinks[index]).offset().top;
-          const sectionHeight = $(scrollLinks[index]).height();
+          let offset = $(scrollLinks[index]).offset();
+          if (offset) {
+            const linkTop = offset.top;
+            let sectionHeight = $(scrollLinks[index]).height();
+            // Handle undefined sectionHeight
+            if (!sectionHeight) { sectionHeight = 0; }
+            // 2nd check is to unselect the last item if
+            // we keep scrolling past it. Give it leeway of 125
+            // to account for padding
+            if (linkTop < fromTop &&
+              fromTop < (linkTop + sectionHeight + 100)) {
+              return scrollLinks[index];
+            }
 
-          // 2nd check is to unselect the last item if
-          // we keep scrolling past it. Give it leeway of 125
-          // to account for padding
-          if (linkTop < fromTop && fromTop < (linkTop + sectionHeight + 100)) {
-            return scrollLinks[index];
+
           }
         });
 
         // Get the id of the current element
         var cur2 = cur[cur.length - 1];
-        const id = cur2 ? cur2[0].id : '';
+        let id = ""
+        if (cur2) {
+          if (cur2.firstChild) {
+            id = cur2.firstChild.attributes.getNamedItem('id').value;
+          }
+        }
         if (lastId !== id) {
           lastId = id;
           links.removeClass('active');
