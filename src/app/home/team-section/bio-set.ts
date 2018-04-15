@@ -115,38 +115,14 @@ class BioSet {
                 }
             }
         ),
-        new Bio( // Joanne
+        new Bio( // Stanley
             {
-                name: 'Joanne Son',
+                name: 'Stanley Tan',
                 title: 'Outreach Chair',
-                smallQuote: '"Will code for food"',
+                smallQuote: '"Tabs or spaces?"',
                 links: {
-                    githubUrl: 'https://github.com/joannegaeunson',
-                    mailToUrl: 'mailto:jos047@ucsd.edu',
-                    imageUrl: ''
-                }
-            }
-        ),
-        new Bio( // Nicholas
-            {
-                name: 'Nicolas Lama-Solet',
-                title: 'Student Satisfaction Chair ',
-                smallQuote: '"Are you happy yet?"',
-                links: {
-                    githubUrl: 'https://github.com/nlamasol',
-                    mailToUrl: 'mailto:nlamasol@ucsd.edu',
-                    imageUrl: ''
-                }
-            }
-        ),
-        new Bio(
-            {
-                name: 'Purag Moumdjian',
-                title: 'Projects Chair',
-                smallQuote: '"Resident open source slacktivist."',
-                links: {
-                    githubUrl: 'https://github.com/purag',
-                    mailToUrl: 'mailto:purag@ucsd.edu',
+                    githubUrl: 'https://github.com/stanleytan',
+                    mailToUrl: 'mailto:stt010@ucsd.edu',
                     imageUrl: ''
                 }
             }
