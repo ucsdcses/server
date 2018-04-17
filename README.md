@@ -1,66 +1,61 @@
 # The CSES Server
 
-This project was generated with
-[Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+Homepage and inner-workings of [cses.ucsd.edu](https://cses.ucsd.edu).
 
-## Development server
+## Set Up and Running
 
-### Set up
+- Install NodeJs.
+- Run the following
+```shell
+npm install @angular/cli -g
+npm install typescript -g
+```
+- From the root directory of this repo, run
+```shell
+npm i
+cd server
+tsc
+cd ..
+ng build
+npm run serve
+```
+- Navigate your browser to localhost:8080
 
-First things first, make sure you have the latest Node.js installed on your
-machine, and then run "npm install" in the root directory of this repo.
+## Guides and Guidelines
+- Code style is pretty lax; things must compile and should be reasonably
+commented
+- Know how Node.js works
+- Know how Typescript works
+- Know how Angular 2 works.
+  - Guides for the above three bullet points are available through
+  Google search; make sure to know what you are doing
 
-Afterwards, you will need the Angular 2 CLI to be able to compile the code.
-Run "npm install @angular/cli -g" to get the latest version.
-
-### Running
-
-Run `npm run serve:watch` in one terminal and `npm run build:watch` for a dev
-server, the serve command starts the server stored under /server, which provides
-the controllers and database access routines, and the ngbuild command compiles
-the typescript files stored under /src into the dist directory, which provides
-the views. Navigate to `http://localhost:3000/`. The app will automatically
-reload if you change any of the source files.
-
-### .env Setup
-You will need a .env file in the root directory of this project for
-some of the features to work properly (fetching Facebook events). The site
-should run fine without it, but in case you were wondering, an example is
-included at the bottom of this section. To get the accessToken and appSecret
-you will need to mail mbland@ucsd.edu, as they require special permissions
- to the CSES facebook page.
-
-```javascript
-accessToken='ACCESS_TOKEN'
-appSecret='APPLICATIONSECRET'
+### Production
+```
+ssh cses@cses.ucsd.edu
+su root
+cd /var/www/html/nodejs/
+git pull
+[run the compilation commands listed in the "set up and running" section]
+pm2 restart server
 ```
 
-## Code scaffolding
+- If there are issues in compilation, you will need to know how pm2 operates
+- We run Apache2, so know how to perform configuration under the sites-enabled
+directory
+- We run a Debian based server, so know how to configure networking on a Linux
+system
+- If you need access to the physical machine, email mbland@ucsd.edu for keycard
+access
 
-Run `ng generate component component-name` to generate a new component. You can
-also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Testing
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the
-`dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via
-[Karma](https://karma-runner.github.io). Currently, given the scope of this
-project, there are no testing guidelines, however, showing some in the case of
-complex functionality is helpful.
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via
-[Protractor](http://www.protractortest.org/). Before running the tests make
-sure you are serving the app via `ng serve`.
+Due to the scale of this project, we adopt a lax testing structure. CircleCI has
+yet to be integrated, but once it is we will require checks to pass for all pull
+requests. Otherwise, you are not required to unit test your code; code review
+is required.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the
-[Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md)
-. If you are new to web development, read up on node.js and angular 2,
-or email mbland@ucsd.edu.
+For any other questions/concerns, submit an issue to this repo or email
+mbland@ucsd.edu.
