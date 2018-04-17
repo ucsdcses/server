@@ -25,7 +25,6 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
-    "@types/express": "^4.11.1",
     "angular-font-awesome": "^2.0.3",
     "angular2-fontawesome": "^0.9.3",
     "body-parser": "^1.17.2",
