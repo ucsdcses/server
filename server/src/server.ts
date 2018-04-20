@@ -23,6 +23,10 @@ app.use(express.static(path.join(__dirname, '../dist/assets/legacy-pages')));
 // Set our api routes
 app.use('/api/events', Events.getEvents);
 
+app.get('/blueprint-cs', (req: express.Request, res: express.Response) => {
+  res.sendFile(path.join(__dirname, '../dist/assets/blueprint-cs/index.html'));
+});
+
 app.get('/devfair', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/devfair/index.html'));
 });
