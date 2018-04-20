@@ -11,7 +11,7 @@ import * as moment from 'moment';
 export class EventsSectionComponent implements OnInit {
   public upcomingFacebookEvents: Array<Event> = [];
   public pastFacebookEvents: Array<Event> = [];
-  public viewingUpcoming: boolean = true;
+  public viewingUpcoming: boolean = false; // Temp while we work on upcoming events fix
 
   constructor(private service: EventsSectionService) { }
 

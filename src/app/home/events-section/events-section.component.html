@@ -2,12 +2,13 @@
   <div class="section-container container">
     <h1>Our Events</h1>
     <div class="row">
-      <div class="col-md-6">
+      <!-- Section below commented out until upcoming events fix is deployed -->
+      <!-- <div class="col-md-6">
         <button class="btn btn-purple btn-border-o col-md-12 col-xs-12" (click)="viewingUpcoming = true" [ngClass]="{'btn-purple-active': viewingUpcoming}">Upcoming Events</button>
       </div>
       <div class="col-md-6">
         <button class="btn btn-purple btn-border-o col-md-12 col-xs-12" (click)="viewingUpcoming = false" [ngClass]="{'btn-purple-active': !viewingUpcoming}">Past Events</button>
-      </div>
+      </div> -->
     </div>
     <div id="events-container">
       <div *ngIf="viewingUpcoming">
@@ -63,7 +64,7 @@
         <p *ngIf="!pastFacebookEvents" class="text-center">
           Events could not be fetched, please try refreshing the page.
         </p>
-        <a href="https://www.facebook.com/pg/csesucsd/events" class="events-archive-btn">View Archives</a>
+        <a href="https://www.facebook.com/pg/csesucsd/events" class="events-archive-btn">View Events</a>
       </div>
     </div>
   </div>
