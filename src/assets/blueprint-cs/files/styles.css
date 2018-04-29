@@ -76,3 +76,13 @@
 .main-logo {
   max-width: 45vw;
 }
+
+.spacer {
+  width: 5px;
+}
+
+@media screen and (max-width: 420px) {
+  .main-logo {
+    max-width: 100%;
+  }
+}
