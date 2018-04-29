@@ -68,3 +68,11 @@
   line-height: 4.5rem;
   padding: 0 2rem;
 }
+
+.intro-box {
+  margin: 0 auto 0;
+}
+
+.main-logo {
+  max-width: 45vw;
+}
