@@ -33,7 +33,7 @@
 }
 
 .bg-block {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   padding: 5%;
   margin: 5% auto;
 }
@@ -55,6 +55,7 @@
 }
 
 /* Custom size */
+
 .button-small {
   font-size: .8rem;
   height: 2.8rem;
@@ -81,8 +82,19 @@
   width: 5px;
 }
 
+.h2 {
+  font-size: 60px;
+}
+
 @media screen and (max-width: 420px) {
   .main-logo {
     max-width: 100%;
   }
+  .h2 {
+    font-size: 40px;
+  }
+}
+
+.underline-subconcious {
+  border-bottom: 2px solid rgba(149, 181, 255, 0.95);
 }
