@@ -1,3 +1,7 @@
+.row h3 {
+  margin-bottom:  0.5rem;
+}
+
 .spacing-large {
   margin: 10% auto 10%;
 }
@@ -41,6 +45,11 @@
 .button-black {
   background-color: black;
   border-color: black;
+}
+
+.button-blue {
+  background-color: #0078E8;
+  border-color: #0078E8;
 }
 
 .button-black.button-clear,
