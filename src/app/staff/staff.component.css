@@ -1,0 +1,38 @@
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+/*
+ Styling for teams-card-component
+--------------------------------------------------------------------*/
+
+.nav-separator {
+	height: 96px;
+}
+
+.card-cover {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card {
+	margin: 16px 16px;
+	width: 32rem;
+	background-color: #ecb213;
+	float: left;
+}
+
+.card-specific-border {
+	margin: 4px 8px 0px 8px;
+}
+
+.list-group {
+	margin-top: 4px;
+	margin-bottom: 0px;
+} 
+
+.card-img-top {
+	width: 100%;
+} 

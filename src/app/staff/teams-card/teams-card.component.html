@@ -1,0 +1,19 @@
+<div class="card-cover">
+  <div *ngFor="let item of getTeams()" class="card">
+    <img class="card-img-top" [src] = item.imgPath alt="Card image cap">
+    <div class="card-block card-specific-border">
+      <h4 class="card-title">{{item.title}}</h4>
+      <p class="card-text">{{item.desc}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let event of item.events" class="list-group-item">
+        {{event}}
+      </li>
+    </ul>
+    <div class="card-block">
+      <button (click)="onBtnClick(item)" type="button" class="btn btn-primary btn-lg btn-block">
+        See Events
+      </button>
+    </div>
+  </div>
+</div>
