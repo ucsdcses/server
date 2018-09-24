@@ -41,6 +41,5 @@ Thumbs.db
 .env
 server/ecosystem.json
 
-# Package lock file
 package-lock.json
-
+clam_modules/.env
