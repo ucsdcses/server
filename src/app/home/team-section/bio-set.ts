@@ -11,7 +11,7 @@ class BioSet {
             {
                 name: 'Rahul Sabnis',
                 title: 'President',
-                smallQuote: '"I can touch my nose with my tongue!"',
+                smallQuote: '"You can probably find me at Regents Pizzeria!"',
                 links: {
                     githubUrl: 'https://github.com/rahulsabnis',
                     mailToUrl: 'mailto:rssabnis@ucsd.edu',
@@ -21,9 +21,9 @@ class BioSet {
         ),
         new Bio(
             {
-                name: 'Megan',
+                name: 'Megan Wang',
                 title: 'VP External',
-                smallQuote: '“Photographer and Board Game Enthusiast “',
+                smallQuote: '"PM if you want to play board games!"',
                 links: {
                     githubUrl: 'https://github.com/megan-m-wang',
                     mailToUrl: 'mailto:mmw022@ucsd.edu',
@@ -35,7 +35,7 @@ class BioSet {
             {
                 name: 'Niral Patel',
                 title: 'VP Internal',
-                smallQuote: '"I overthink things like this quote."',
+                smallQuote: '"There\'s so much I can say here...feel free to PM me!"',
                 links: {
                     githubUrl: 'https://github.com/niral-patel',
                     mailToUrl: 'mailto: ndp002@ucsd.edu',
@@ -45,9 +45,9 @@ class BioSet {
         ),
         new Bio(
             {
-                name: 'Sean',
+                name: 'Sean McEntee',
                 title: 'VP Finance',
-                smallQuote: '"Lover of all things linear."',
+                smallQuote: '"Every group needs a cranky old man"',
                 links: {
                     githubUrl: "",
                     mailToUrl: 'mailto:smcentee@ucsd.edu',
@@ -57,7 +57,7 @@ class BioSet {
         ),
         new Bio(
             {
-                name: 'Emily',
+                name: 'Emily Son',
                 title: 'Pro-Dev Chair',
                 smallQuote: '"Excited to meet you guys at all our events!"',
                 links: {
@@ -67,26 +67,14 @@ class BioSet {
                 }
             }
         ),
-	new Bio( 
+        new Bio(
             {
                 name: 'Jaehoon Choi',
                 title: 'Pro-Dev Chair',
-                smallQuote: '""',
+                smallQuote: '"send help!"',
                 links: {
-                    githubUrl: '',
+                    githubUrl: 'https://github.com/jhoonchoi',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
-                }
-            }
-        ),
-        new Bio(
-            {
-                name: 'Pushpak',
-                title: 'Projects Chair Internal',
-                smallQuote: '"We do some really cool stuff here!"',
-                links: {
-                    githubUrl: 'https://github.com/pushpakrajgautam',
-                    mailToUrl: 'mailto:p1gautam@ucsd.edu',
                     imageUrl: ""
                 }
             }
@@ -95,7 +83,7 @@ class BioSet {
             {
                 name: 'Arkin Gupta',
                 title: 'Projects Chair External',
-                smallQuote: '""',
+                smallQuote: '"from cses import fun"',
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
@@ -107,7 +95,7 @@ class BioSet {
             {
                 name: 'Timothy Oh',
                 title: 'Social Chair',
-                smallQuote: '""',
+                smallQuote: '"I code in google docs"',
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
@@ -119,7 +107,7 @@ class BioSet {
             {
                 name: 'Bonnie Dai',
                 title: 'Design Chair',
-                smallQuote: '""',
+                smallQuote: '"hi friend"',
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
@@ -131,7 +119,7 @@ class BioSet {
             {
                 name: 'Wye Mun Chin',
                 title: 'PR Chair',
-                smallQuote: '""',
+                smallQuote: '"Wye can\'t we be friends\?"',
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
@@ -143,12 +131,12 @@ class BioSet {
             {
                 name: 'Stanley Tan',
                 title: 'Outreach Chair',
-                smallQuote: '"Tabs or spaces?"',
+                smallQuote: '"Technical or behavioral?"',
                 links: {
                     githubUrl: 'https://github.com/stanleytan',
                     mailToUrl: 'mailto:stt010@ucsd.edu',
                     imageUrl: ''
-		    
+
                 }
             }
         )

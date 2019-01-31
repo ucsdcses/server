@@ -45,7 +45,7 @@ class Bio extends BioData {
     }
 
     // TODO: Make this a constant in the application
-    return "assets/images/team-placeholder.jpg";
+    return 'assets/images/team-placeholder.jpg';
   }
 }
 
