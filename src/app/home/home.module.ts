@@ -28,6 +28,7 @@ import { EventsSectionService } from
   './events-section/events-section.service';
 
 import { StaffComponent } from '../staff/staff.component';
+import {SponsorSectionComponent} from "./sponsor-section/sponsor-section.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { StaffComponent } from '../staff/staff.component';
     AboutSectionComponent,
     EventsSectionComponent,
     ContactSectionComponent,
+    SponsorSectionComponent,
     FooterComponent,
     StaffComponent
   ],
