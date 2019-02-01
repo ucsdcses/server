@@ -15,7 +15,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/rahulsabnis',
                     mailToUrl: 'mailto:rssabnis@ucsd.edu',
-                    imageUrl: "",
+                    imageUrl: 'assets/images/board/rahul.JPG',
                 }
             }
         ),
@@ -27,7 +27,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/megan-m-wang',
                     mailToUrl: 'mailto:mmw022@ucsd.edu',
-                    imageUrl: "",
+                    imageUrl: 'assets/images/board/megan.JPG',
                 }
             }
         ),
@@ -39,7 +39,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/niral-patel',
                     mailToUrl: 'mailto: ndp002@ucsd.edu',
-                    imageUrl: "",
+                    imageUrl: 'assets/images/board/niral.JPG',
                 }
             }
         ),
@@ -49,9 +49,9 @@ class BioSet {
                 title: 'VP Finance',
                 smallQuote: '"Every group needs a cranky old man"',
                 links: {
-                    githubUrl: "",
+                    githubUrl: '',
                     mailToUrl: 'mailto:smcentee@ucsd.edu',
-                    imageUrl: "",
+                  imageUrl: 'assets/images/board/sean.JPG',
                 }
             }
         ),
@@ -63,7 +63,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/heejungemily',
                     mailToUrl: 'mailto:hes018@ucsd.edu',
-                    imageUrl: "",
+                    imageUrl: '',
                 }
             }
         ),
@@ -75,7 +75,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/jhoonchoi',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
+                  imageUrl: 'assets/images/board/jaehoon.JPG',
                 }
             }
         ),
@@ -87,7 +87,7 @@ class BioSet {
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
+                  imageUrl: 'assets/images/board/arkin.JPG',
                 }
             }
         ),
@@ -99,7 +99,7 @@ class BioSet {
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
+                  imageUrl: 'assets/images/board/tim.JPG',
                 }
             }
         ),
@@ -111,7 +111,7 @@ class BioSet {
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
+                  imageUrl: 'assets/images/board/bonnie.JPG',
                 }
             }
         ),
@@ -123,7 +123,7 @@ class BioSet {
                 links: {
                     githubUrl: '',
                     mailToUrl: 'mailto:',
-                    imageUrl: ""
+                    imageUrl: 'assets/images/board/wye.JPG',
                 }
             }
         ),
@@ -135,7 +135,7 @@ class BioSet {
                 links: {
                     githubUrl: 'https://github.com/stanleytan',
                     mailToUrl: 'mailto:stt010@ucsd.edu',
-                    imageUrl: ''
+                    imageUrl: 'assets/images/board/stanley.JPG',
 
                 }
             }
