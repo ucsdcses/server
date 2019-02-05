@@ -1,6 +1,6 @@
 import * as http from 'http';
 // Get dependencies
-import * as express from "express";
+import * as express from 'express';
 const path = require('path');
 const bodyParser = require('body-parser');
 
@@ -27,6 +27,8 @@ app.get('/blueprint-cs', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/blueprint-cs/index.html'));
 });
 
+// Commented out all unused sites
+/*
 app.get('/devfair', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/devfair/index.html'));
 });
@@ -42,6 +44,7 @@ app.get('/cselabs', (req: express.Request, res: express.Response) => {
 app.get('/late-night', (req: express.Request, res: express.Response) => {
   res.sendFile(path.join(__dirname, '../dist/assets/legacy-pages/late-night/index.html'));
 });
+*/
 
 // Catch all other routes and return the index file
 app.get('*', (req: express.Request, res: express.Response) => {
