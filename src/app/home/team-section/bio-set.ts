@@ -7,7 +7,7 @@ class BioSet {
     public static BIO_SET: Array<Bio> = [
         // Work around to get the getImage when serializing from JSON. Creates a
         // parent class type and casts it to a regular Bio object.
-        new Bio(
+        new Bio (
             {
                 name: 'Rahul Sabnis',
                 title: 'President',
@@ -19,7 +19,7 @@ class BioSet {
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Megan Wang',
                 title: 'VP External',
@@ -31,7 +31,7 @@ class BioSet {
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Niral Patel',
                 title: 'VP Internal',
@@ -43,7 +43,7 @@ class BioSet {
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Sean McEntee',
                 title: 'VP Finance',
@@ -55,7 +55,7 @@ class BioSet {
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Emily Son',
                 title: 'Pro-Dev Chair',
@@ -67,67 +67,79 @@ class BioSet {
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Jaehoon Choi',
                 title: 'Pro-Dev Chair',
                 smallQuote: '"send help!"',
                 links: {
                     githubUrl: 'https://github.com/jhoonchoi',
-                    mailToUrl: 'mailto:',
+                    mailToUrl: 'mailto:jac318@ucsd.edu',
                   imageUrl: 'assets/images/board/jaehoon.JPG',
                 }
             }
         ),
-        new Bio(
+        new Bio (
+          {
+            name: 'Saurabh Kanhegaonkar',
+            title: 'Projects Chair Internal',
+            smallQuote: '"weird flex, but ok"',
+            links: {
+              githubUrl: 'http://github.com/kanhegaonkarsaurabh',
+              mailToUrl: 'mailto:skanhega@ucsd.edu',
+              imageUrl: '',
+            }
+          }
+        ),
+        new Bio (
             {
                 name: 'Arkin Gupta',
                 title: 'Projects Chair External',
                 smallQuote: '"from cses import fun"',
                 links: {
                     githubUrl: '',
-                    mailToUrl: 'mailto:',
+                    mailToUrl: 'mailto:arg061@ucsd.edu',
                   imageUrl: 'assets/images/board/arkin.JPG',
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Timothy Oh',
                 title: 'Social Chair',
                 smallQuote: '"I code in google docs"',
                 links: {
                     githubUrl: '',
-                    mailToUrl: 'mailto:',
+                    mailToUrl: 'mailto:t8oh@ucsd.edu',
                   imageUrl: 'assets/images/board/tim.JPG',
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Bonnie Dai',
                 title: 'Design Chair',
                 smallQuote: '"hi friend"',
                 links: {
                     githubUrl: '',
-                    mailToUrl: 'mailto:',
+                    mailToUrl: 'mailto:tydai@ucsd.edu',
                   imageUrl: 'assets/images/board/bonnie.JPG',
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Wye Mun Chin',
                 title: 'PR Chair',
                 smallQuote: '"Wye can\'t we be friends\?"',
                 links: {
                     githubUrl: '',
-                    mailToUrl: 'mailto:',
+                    mailToUrl: 'mailto:wmchin@ucsd.edu',
                     imageUrl: 'assets/images/board/wye.JPG',
                 }
             }
         ),
-        new Bio(
+        new Bio (
             {
                 name: 'Stanley Tan',
                 title: 'Outreach Chair',
