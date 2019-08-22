@@ -18,6 +18,14 @@ section#sponsors .section-container .sponsor {
   margin: 5% 3%;
   vertical-align: middle; }
 
+.sponsor-lab-society {
+  max-height: 120px;
+  max-width: 180px;
+  margin: 5% 3%;
+  vertical-align: middle;
+  margin-bottom: 60px;
+}
+
 section#sponsors .section-container .sponsor-big {
   max-height: 180px;
   max-width: 360px;
