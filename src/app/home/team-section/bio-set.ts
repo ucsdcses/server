@@ -9,149 +9,134 @@ class BioSet {
         // parent class type and casts it to a regular Bio object.
         new Bio (
             {
-                name: 'Rahul Sabnis',
+                name: 'Wye Mun Chin',
                 title: 'President',
-                smallQuote: '"You can probably find me at Regents Pizzeria!"',
                 links: {
-                    githubUrl: 'https://github.com/rahulsabnis',
-                    mailToUrl: 'mailto:rssabnis@ucsd.edu',
-                    imageUrl: 'assets/images/board/rahul.JPG',
-                }
-            }
-        ),
-        new Bio (
-            {
-                name: 'Megan Wang',
-                title: 'VP External',
-                smallQuote: '"PM if you want to play board games!"',
-                links: {
-                    githubUrl: 'https://github.com/megan-m-wang',
-                    mailToUrl: 'mailto:mmw022@ucsd.edu',
-                    imageUrl: 'assets/images/board/megan.JPG',
-                }
-            }
-        ),
-        new Bio (
-            {
-                name: 'Niral Patel',
-                title: 'VP Internal',
-                smallQuote: '"There\'s so much I can say here...feel free to PM me!"',
-                links: {
-                    githubUrl: 'https://github.com/niral-patel',
-                    mailToUrl: 'mailto: ndp002@ucsd.edu',
-                    imageUrl: 'assets/images/board/niral.JPG',
-                }
-            }
-        ),
-        new Bio (
-            {
-                name: 'Sean McEntee',
-                title: 'VP Finance',
-                smallQuote: '"Every group needs a cranky old man"',
-                links: {
-                    githubUrl: '',
-                    mailToUrl: 'mailto:smcentee@ucsd.edu',
-                  imageUrl: 'assets/images/board/sean.JPG',
+                    mailToUrl: 'mailto:wmchin@ucsd.edu',
+                    imageUrl: ''
                 }
             }
         ),
         new Bio (
             {
                 name: 'Emily Son',
-                title: 'Pro-Dev Chair',
-                smallQuote: '"Excited to meet you guys at all our events!"',
+                title: 'VP External',
                 links: {
-                    githubUrl: 'https://github.com/heejungemily',
                     mailToUrl: 'mailto:hes018@ucsd.edu',
-                    imageUrl: '',
-                }
-            }
-        ),
-        new Bio (
-            {
-                name: 'Jaehoon Choi',
-                title: 'Pro-Dev Chair',
-                smallQuote: '"send help!"',
-                links: {
-                    githubUrl: 'https://github.com/jhoonchoi',
-                    mailToUrl: 'mailto:jac318@ucsd.edu',
-                  imageUrl: 'assets/images/board/jaehoon.JPG',
-                }
-            }
-        ),
-        new Bio (
-          {
-            name: 'Saurabh Kanhegaonkar',
-            title: 'Projects Chair Internal',
-            smallQuote: '"weird flex, but ok"',
-            links: {
-              githubUrl: 'http://github.com/kanhegaonkarsaurabh',
-              mailToUrl: 'mailto:skanhega@ucsd.edu',
-              imageUrl: '',
-            }
-          }
-        ),
-        new Bio (
-            {
-                name: 'Arkin Gupta',
-                title: 'Projects Chair External',
-                smallQuote: '"from cses import fun"',
-                links: {
-                    githubUrl: '',
-                    mailToUrl: 'mailto:arg061@ucsd.edu',
-                  imageUrl: 'assets/images/board/arkin.JPG',
-                }
-            }
-        ),
-        new Bio (
-            {
-                name: 'Timothy Oh',
-                title: 'Social Chair',
-                smallQuote: '"I code in google docs"',
-                links: {
-                    githubUrl: '',
-                    mailToUrl: 'mailto:t8oh@ucsd.edu',
-                  imageUrl: 'assets/images/board/tim.JPG',
+                    imageUrl: ''
                 }
             }
         ),
         new Bio (
             {
                 name: 'Bonnie Dai',
-                title: 'Design Chair',
-                smallQuote: '"hi friend"',
+                title: 'VP Internal',
                 links: {
-                    githubUrl: '',
                     mailToUrl: 'mailto:tydai@ucsd.edu',
-                  imageUrl: 'assets/images/board/bonnie.JPG',
+                    imageUrl: ''
                 }
             }
         ),
         new Bio (
             {
-                name: 'Wye Mun Chin',
+                name: 'Timothy Oh',
+                title: 'VP Finance',
+                links: {
+                    mailToUrl: 'mailto:t8oh@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Tae Kwang (Jason) Chung',
+                title: 'Pro-Dev Chair',
+                links: {
+                    mailToUrl: 'mailto:tkc016@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Pawan Paleja',
+                title: 'Pro-Dev Chair',
+                links: {
+                    mailToUrl: 'mailto:ppaleja@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Saurabh Kanhegaonkar',
+                title: 'Projects Chair Internal',
+                links: {
+                    mailToUrl: 'mailto:skanhega@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Alex Ruber',
+                title: 'Quarterly Projects Chair',
+                links: {
+                    mailToUrl: 'mailto:mruber@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Nabi Ozberkman',
+                title: 'Quarterly Projects Chair',
+                links: {
+                    mailToUrl: 'mailto:nozberkm@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Samarth Arora',
+                title: 'Social Chair',
+                links: {
+                    mailToUrl: 'mailto:saarora@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Anh D. Nguyen',
+                title: 'Design Chair',
+                links: {
+                    mailToUrl: 'mailto:adn034@ucsd.edu',
+                    imageUrl: ''
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Carleen Li',
                 title: 'PR Chair',
-                smallQuote: '"Wye can\'t we be friends\?"',
                 links: {
-                    githubUrl: '',
-                    mailToUrl: 'mailto:wmchin@ucsd.edu',
-                    imageUrl: 'assets/images/board/wye.JPG',
+                    mailToUrl: 'mailto:cyli@ucsd.edu',
+                    imageUrl: ''
                 }
             }
         ),
         new Bio (
             {
-                name: 'Stanley Tan',
+                name: 'Chen Meng',
                 title: 'Outreach Chair',
-                smallQuote: '"Technical or behavioral?"',
                 links: {
-                    githubUrl: 'https://github.com/stanleytan',
-                    mailToUrl: 'mailto:stt010@ucsd.edu',
-                    imageUrl: 'assets/images/board/stanley.JPG',
-
+                    mailToUrl: 'mailto:c5meng@ucsd.edu',
+                    imageUrl: ''
                 }
             }
-        )
+        ),
     ];
 }
 

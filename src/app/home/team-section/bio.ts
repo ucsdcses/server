@@ -4,12 +4,12 @@
 class BioData {
   name: string;
   title: string;
-  smallQuote: string;
+  // smallQuote: string;
   links: Links;
 }
 
 interface Links {
-  githubUrl: string;
+  // githubUrl: string;
   mailToUrl: string;
   imageUrl: string;
 }
@@ -29,7 +29,7 @@ class Bio extends BioData {
     if (bioData) {
       this.name = bioData.name;
       this.title = bioData.title;
-      this.smallQuote = bioData.smallQuote;
+      // this.smallQuote = bioData.smallQuote;
       this.links = bioData.links;
     }
   }
