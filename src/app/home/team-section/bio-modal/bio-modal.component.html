@@ -6,11 +6,15 @@
     <div>
       <h3 class="bio-name">{{bio.name}}</h3>
       <h4> {{bio.title}} </h4>
-      <h5 class='bio-description'> {{bio.smallQuote}} </h5>
+      <!-- <h5 class='bio-description'> {{bio.smallQuote}} </h5> -->
       <nav>
-        <!-- <a class="bio-link" target="_blank" [attr.href]="bio.links.githubUrl">
-          <fa name="github"></fa>
-        </a> -->
+        <a class="bio-link" target="_blank" [attr.href]="bio.links.githubUrl">
+          <!-- <fa name="Github"></fa> -->
+          <i class ='fa fa-github'></i>
+        </a>
+        <a class="bio-link" target="_blank" [attr.href]="bio.links.linkedinUrl">
+          <i class ="fa fa-linkedin-square"></i>
+        </a>
         <a class="bio-link" target="_blank" [attr.href]="bio.links.mailToUrl">
           <fa name="envelope"></fa>
         </a>
