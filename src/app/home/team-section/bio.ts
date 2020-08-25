@@ -9,7 +9,8 @@ class BioData {
 }
 
 interface Links {
-  // githubUrl: string;
+  githubUrl: string;
+  linkedinUrl: string;
   mailToUrl: string;
   imageUrl: string;
 }
