@@ -86,10 +86,10 @@ class BioSet {
                 name: 'Eric Kang',
                 title: 'Pro-Dev Chair',
                 links: {
-                  // TODO: update email address + urls
-                  mailToUrl: 'mailto:ppaleja@ucsd.edu',
-                  linkedinUrl: '',
-                  githubUrl: '',
+                  
+                  mailToUrl: 'mailto:ekang@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/eric-kang-3589b1144/',
+                  githubUrl: 'https://github.com/eric-h-kang',
                   imageUrl: 'assets/images/board-2020/Eric.jpg'
                 }
             }
@@ -124,7 +124,7 @@ class BioSet {
                 title: 'Design Chair',
                 links: {
                   // TODO: update email address + urls
-                  mailToUrl: 'mailto:adn034@ucsd.edu',
+                  mailToUrl: 'mailto:silin@ucsd.edu',
                   linkedinUrl: '',
                   githubUrl: '',
                   imageUrl: 'assets/images/board-2020/Eunice.jpg'
