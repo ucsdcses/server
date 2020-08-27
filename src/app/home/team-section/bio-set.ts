@@ -26,8 +26,8 @@ class BioSet {
               links: {
                   mailToUrl: 'mailto:c5meng@ucsd.edu',
                  // TODO linkedin url + github url
-                  linkedinUrl: '',
-                  githubUrl: '',
+                  linkedinUrl: 'https://www.linkedin.com/in/chenmeng98/',
+                  githubUrl: 'https://github.com/MCharming98',
                   imageUrl: 'assets/images/board-2020/Chen.jpg'
               }
             }
@@ -137,7 +137,7 @@ class BioSet {
                 title: 'PR Chair',
                 links: {
                   mailToUrl: 'mailto:dluc@ucsd.edu',
-                  linkedinUrl: 'https://www.linkedin.com/in/dennicluc/',
+                  linkedinUrl: 'https://www.linkedin.com/in/dennisluc/',
                   githubUrl: 'https://github.com/denniskluc',
                   imageUrl: 'assets/images/board-2020/Dennis.jpg'
                 }
