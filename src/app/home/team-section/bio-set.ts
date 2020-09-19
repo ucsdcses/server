@@ -26,8 +26,8 @@ class BioSet {
               links: {
                   mailToUrl: 'mailto:c5meng@ucsd.edu',
                  // TODO linkedin url + github url
-                  linkedinUrl: '',
-                  githubUrl: '',
+                  linkedinUrl: 'https://www.linkedin.com/in/chenmeng98/',
+                  githubUrl: 'https://github.com/MCharming98',
                   imageUrl: 'assets/images/board-2020/Chen.jpg'
               }
             }
@@ -86,10 +86,10 @@ class BioSet {
                 name: 'Eric Kang',
                 title: 'Pro-Dev Chair',
                 links: {
-                  // TODO: update email address + urls
-                  mailToUrl: 'mailto:ppaleja@ucsd.edu',
-                  linkedinUrl: '',
-                  githubUrl: '',
+                  
+                  mailToUrl: 'mailto:ekang@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/eric-kang-3589b1144/',
+                  githubUrl: 'https://github.com/eric-h-kang',
                   imageUrl: 'assets/images/board-2020/Eric.jpg'
                 }
             }
@@ -124,7 +124,7 @@ class BioSet {
                 title: 'Design Chair',
                 links: {
                   // TODO: update email address + urls
-                  mailToUrl: 'mailto:adn034@ucsd.edu',
+                  mailToUrl: 'mailto:silin@ucsd.edu',
                   linkedinUrl: '',
                   githubUrl: '',
                   imageUrl: 'assets/images/board-2020/Eunice.jpg'
@@ -137,7 +137,7 @@ class BioSet {
                 title: 'PR Chair',
                 links: {
                   mailToUrl: 'mailto:dluc@ucsd.edu',
-                  linkedinUrl: 'https://www.linkedin.com/in/dennicluc/',
+                  linkedinUrl: 'https://www.linkedin.com/in/dennisluc/',
                   githubUrl: 'https://github.com/denniskluc',
                   imageUrl: 'assets/images/board-2020/Dennis.jpg'
                 }
