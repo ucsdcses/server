@@ -25,7 +25,6 @@ class BioSet {
               title: 'Co-President',
               links: {
                   mailToUrl: 'mailto:c5meng@ucsd.edu',
-                 // TODO linkedin url + github url
                   linkedinUrl: 'https://www.linkedin.com/in/chenmeng98/',
                   githubUrl: 'https://github.com/MCharming98',
                   imageUrl: 'assets/images/board-2020/Chen.jpg'
@@ -38,9 +37,8 @@ class BioSet {
                 title: 'VP External',
                 links: {
                   mailToUrl: 'mailto:ppaleja@ucsd.edu',
-                  // TODO linkedin url + github url
-                  linkedinUrl: '',
-                  githubUrl: '',
+                  linkedinUrl: 'https://www.linkedin.com/in/pawanpaleja',
+                  githubUrl: 'https://github.com/ppaleja',
                   imageUrl: 'assets/images/board-2020/Pawan.jpg'
                 }
             }
@@ -86,7 +84,6 @@ class BioSet {
                 name: 'Eric Kang',
                 title: 'Pro-Dev Chair',
                 links: {
-                  
                   mailToUrl: 'mailto:ekang@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/eric-kang-3589b1144/',
                   githubUrl: 'https://github.com/eric-h-kang',
@@ -125,7 +122,7 @@ class BioSet {
                 links: {
                   // TODO: update email address + urls
                   mailToUrl: 'mailto:silin@ucsd.edu',
-                  linkedinUrl: '',
+                  linkedinUrl: 'http://linkedin.com/in/eunice-lin-54aa921a2',
                   githubUrl: '',
                   imageUrl: 'assets/images/board-2020/Eunice.jpg'
                 }

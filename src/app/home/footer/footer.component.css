@@ -1,7 +1,7 @@
 
 footer {
   padding: 60px 4%;
-  background-color: #f5f5f9; }
+  background-color: #0f1d1c; }
   footer .footer-container {
     margin: 0 auto;
     max-width: 700px; }
@@ -22,7 +22,7 @@ footer {
       font-size: 14px; }
     footer .col a, footer .col p {
       display: block;
-      color: #414141;
+      color: #fff;
       font-size: 13px; }
       footer .col a.subscribe-btn, footer .col p.subscribe-btn {
         cursor: pointer; }

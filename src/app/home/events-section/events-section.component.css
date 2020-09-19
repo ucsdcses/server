@@ -126,9 +126,9 @@ section#events .section-container h1 {
 }
 
 section#events .section-container .events-archive-btn {
-  display: block;
-  margin: 25px auto 0 auto;
-  width: 250px;
+  display: inline-block;
+  margin: 20px auto 0 auto;
+  width: calc(50% - 4px);
   height: 45px;
   background-color: #edab18;
   box-shadow: 3px 3px 5px rgba(60, 60, 60, 0.4);
@@ -137,6 +137,7 @@ section#events .section-container .events-archive-btn {
   line-height: 45px;
   transition: 0.2s all ease;
   text-decoration: none;
+
 }
 
 section#events .section-container .events-archive-btn:hover {
