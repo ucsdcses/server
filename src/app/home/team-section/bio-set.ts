@@ -120,7 +120,7 @@ class BioSet {
                 name: 'Eunice Lin',
                 title: 'Design Chair',
                 links: {
-                  // TODO: update email address + urls
+                 
                   mailToUrl: 'mailto:silin@ucsd.edu',
                   linkedinUrl: 'http://linkedin.com/in/eunice-lin-54aa921a2',
                   githubUrl: '',
