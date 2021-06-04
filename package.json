@@ -66,7 +66,7 @@
     "karma-coverage-istanbul-reporter": "^1.4.2",
     "karma-jasmine": "^1.1.1",
     "karma-jasmine-html-reporter": "^1.0.0",
-    "mongodb": "^3.0.6",
+    "mongodb": "^3.1.13",
     "nodemon": "^1.17.3",
     "protractor": "^5.3.1",
     "ts-node": "^6.0.0",
