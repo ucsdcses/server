@@ -934,7 +934,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@^4.1.0:
+bootstrap@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
 
@@ -3979,7 +3979,7 @@ jasminewd2@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.1.0.tgz#da595275d1ae631de736ac0a7c7d85c9f73ef652"
 
-jquery@^3.3.1:
+jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
 
@@ -4669,7 +4669,7 @@ mongo@^0.1.0:
   dependencies:
     mongodb "*"
 
-mongodb@*, mongodb@^3.0.6:
+mongodb@*:
   version "3.6.6"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.6.6.tgz#92e3658f45424c34add3003e3046c1535c534449"
   dependencies:
@@ -4677,6 +4677,18 @@ mongodb@*, mongodb@^3.0.6:
     bson "^1.1.4"
     denque "^1.4.1"
     optional-require "^1.0.2"
+    safe-buffer "^5.1.2"
+  optionalDependencies:
+    saslprep "^1.0.0"
+
+mongodb@^3.6.9:
+  version "3.6.9"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.6.9.tgz#4889cf529724267d393a18275d6cf19d71905b1d"
+  dependencies:
+    bl "^2.2.1"
+    bson "^1.1.4"
+    denque "^1.4.1"
+    optional-require "^1.0.3"
     safe-buffer "^5.1.2"
   optionalDependencies:
     saslprep "^1.0.0"
@@ -5114,7 +5126,7 @@ optimist@^0.6.1:
     minimist "~0.0.1"
     wordwrap "~0.0.2"
 
-optional-require@^1.0.2:
+optional-require@^1.0.2, optional-require@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/optional-require/-/optional-require-1.0.3.tgz#275b8e9df1dc6a17ad155369c2422a440f89cb07"
 
@@ -7761,8 +7773,8 @@ xxhashjs@^0.2.1:
     cuint "^0.2.2"
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.3"
