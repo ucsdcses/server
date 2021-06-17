@@ -75,7 +75,7 @@ class BioSet {
                   mailToUrl: 'mailto:zit001@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/zixuan-tony-tang',
                   githubUrl: 'https://github.com/TonyTang2001',
-                  imageUrl: 'assets/images/board-2021/TonyTang.jpg'
+                  imageUrl: 'assets/images/board-2021/TonyTang.JPG'
                 }
             }
         ),
