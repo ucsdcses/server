@@ -99,7 +99,7 @@ class BioSet {
                   mailToUrl: 'mailto:sboussar@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/stephen-boussarov/',
                   githubUrl: 'https://github.com/stephenbusi',
-                  imageUrl: 'assets/images/404.jpg'
+                  imageUrl: 'assets/images/board-2021/Stephen.jpg'
                 }
             }
         ),
