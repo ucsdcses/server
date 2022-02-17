@@ -105,13 +105,13 @@ class BioSet {
         ),
         new Bio (
             {
-                name: 'Tanay Reddy',
+                name: 'Vardhan Agarwal',
                 title: 'PR Chair',
                 links: {
-                  mailToUrl: 'mailto:tanaykreddy@gmail.com',
-                  linkedinUrl: 'https://www.linkedin.com/in/tanay-reddy-a281411b5/',
-                  githubUrl: 'https://github.com/tannaykreddy',
-                  imageUrl: 'assets/images/board-2021/Tanay.jpg'
+                  mailToUrl: 'mailto:v7agarwa@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/vardhanagarwal/',
+                  githubUrl: '',
+                  imageUrl: 'assets/images/board-2021/VardhanAgarwal.jpg'
                 }
             }
         ),
