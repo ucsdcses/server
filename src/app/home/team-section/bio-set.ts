@@ -35,7 +35,7 @@ class BioSet {
         new Bio (
             {
                 name: 'Ke Xu',
-                title: 'VP Internal',
+                title: 'VP External',
                 links: {
                   mailToUrl: 'mailto:k6xu@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/ke-xu-079351211/',
