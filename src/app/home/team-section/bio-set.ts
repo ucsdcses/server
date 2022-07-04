@@ -99,7 +99,7 @@ class BioSet {
                   mailToUrl: 'mailto:vparekh@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/varun-devang-parekh-223627212',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/Varun.jpg'
+                  imageUrl: 'assets/images/board-2022/Varun.png'
                 }
             }
         )
