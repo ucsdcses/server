@@ -9,6 +9,18 @@ class BioSet {
         // parent class type and casts it to a regular Bio object.
         new Bio (
             {
+                name: 'Dr. Mia Minnes',
+                title: 'CSE Faculty Advisor',
+                links: {
+                  mailToUrl: 'mailto:minnes@eng.ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/mia-minnes-08450a235/',
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/Mia.png'
+                }
+            }
+        ),
+        new Bio (
+            {
                 name: 'Vardhan Agarwal',
                 title: 'President, VP Finance',
                 links: {
