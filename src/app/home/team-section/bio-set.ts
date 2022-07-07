@@ -69,7 +69,7 @@ class BioSet {
         ),
         new Bio (
             {
-                name: 'Gabriel Leif Diaz',
+                name: 'Gabriel Diaz',
                 title: 'Projects Chair',
                 links: {
                   mailToUrl: 'mailto:lgdiaz@ucsd.edu',
@@ -93,7 +93,7 @@ class BioSet {
         ),
         new Bio (
             {
-                name: 'Saatvhik Dirisala',
+                name: 'Saathvik Dirisala',
                 title: 'Pro-Dev Chair',
                 links: {
                   mailToUrl: 'mailto:sdirisala@ucsd.edu',
