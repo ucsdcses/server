@@ -33,7 +33,7 @@
     "bootstrap": "^4.6.0",
     "core-js": "^2.5.5",
     "dotenv": "^5.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "fbgraph": "^1.4.4",
     "font-awesome": "^4.7.0",
     "jasmine": "^3.1.0",
