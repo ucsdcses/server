@@ -10,7 +10,7 @@ class BioSet {
         new Bio (
             {
                 name: 'Vardhan Agarwal',
-                title: 'President, VP Finance',
+                title: 'President',
                 links: {
                   mailToUrl: 'mailto:v7agarwa@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/vardhanagarwal/',
@@ -33,6 +33,18 @@ class BioSet {
         ),
         new Bio (
             {
+                name: 'Anuj Jain',
+                title: 'VP Finance',
+                links: {
+                  mailToUrl: 'mailto:anj008@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/anuj-jain-92207121b/',
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/Deepansha.jpg' // FIX ME
+                }
+            }
+        ),
+        new Bio (
+            {
                 name: 'Amit Namburi',
                 title: 'VP Internal',
                 links: {
@@ -45,13 +57,13 @@ class BioSet {
         ),
         new Bio (
             {
-                name: 'Ke Xu',
+                name: 'Joshua Villanueva',
                 title: 'VP External',
                 links: {
-                  mailToUrl: 'mailto:k6xu@ucsd.edu',
-                  linkedinUrl: 'https://www.linkedin.com/in/ke-xu-079351211/',
-                  githubUrl: 'https://github.com/lorraineeeee',
-                  imageUrl: 'assets/images/board-2022/Ke.jpg'
+                  mailToUrl: 'mailto:j6villanueva@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/joshua-villanueva-professional/', 
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/bear.jpeg' // FIX ME
                 }
             }
         ),
@@ -64,6 +76,30 @@ class BioSet {
                   linkedinUrl: 'https://www.linkedin.com/in/gabriel-diaz-57815118b/',
                   githubUrl: 'https://github.com/gabriel-diaz-ucsd',
                   imageUrl: 'assets/images/board-2022/Gabriel.png'
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Bryan Lee',
+                title: 'Projects Chair',
+                links: {
+                  mailToUrl: 'mailto:bhlee@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/gabriel-diaz-57815118b/',
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/bear.jpeg' //FIX ME
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Ishika Agrawal',
+                title: 'DEI Chair',
+                links: {
+                  mailToUrl: 'mailto:iagrawal@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/ishikaagrawal2504/',
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/Ishika.jpg'
                 }
             }
         ),
@@ -88,6 +124,30 @@ class BioSet {
                   linkedinUrl: 'https://www.linkedin.com/mwlite/in/saathvik-dirisala-4a1817197',
                   githubUrl: 'https://github.com/saathvikpd',
                   imageUrl: 'assets/images/board-2022/Saathvik.png'
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Raina Song',
+                title: 'Design Chair',
+                links: {
+                  mailToUrl: 'mailto:yus083@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/rainasong/',
+                  githubUrl: 'https://rainasong.com/',
+                  imageUrl: 'assets/images/board-2022/Raina_Song.png'
+                }
+            }
+        ),
+        new Bio (
+            {
+                name: 'Nabil Khoury',
+                title: 'PR Chair',
+                links: {
+                  mailToUrl: 'mailto:nkhoury@ucsd.edu',
+                  linkedinUrl: 'https://www.linkedin.com/in/nabil-khoury-5b49a2220/',
+                  githubUrl: 'https://github.com/ucsdcses/',
+                  imageUrl: 'assets/images/board-2022/Nabil.jpg'
                 }
             }
         ),
