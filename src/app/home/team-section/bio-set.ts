@@ -39,7 +39,7 @@ class BioSet {
                   mailToUrl: 'mailto:anj008@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/anuj-jain-92207121b/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/bear.png' // FIX ME
+                  imageUrl: 'assets/images/board-2022/Anuj.png'
                 }
             }
         ),
@@ -99,7 +99,7 @@ class BioSet {
                   mailToUrl: 'mailto:iagrawal@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/ishikaagrawal2504/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/Ishika.jpg'
+                  imageUrl: 'assets/images/board-2022/Ishika.png'
                 }
             }
         ),
