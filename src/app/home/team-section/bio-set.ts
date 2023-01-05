@@ -39,7 +39,7 @@ class BioSet {
                   mailToUrl: 'mailto:anj008@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/anuj-jain-92207121b/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/Deepansha.jpg' // FIX ME
+                  imageUrl: 'assets/images/board-2022/bear.jpeg' // FIX ME
                 }
             }
         ),
