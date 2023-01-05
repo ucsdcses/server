@@ -39,7 +39,7 @@ class BioSet {
                   mailToUrl: 'mailto:anj008@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/anuj-jain-92207121b/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/bear.jpeg' // FIX ME
+                  imageUrl: 'assets/images/board-2022/bear.png' // FIX ME
                 }
             }
         ),
@@ -63,7 +63,7 @@ class BioSet {
                   mailToUrl: 'mailto:j6villanueva@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/joshua-villanueva-professional/', 
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/bear.jpeg' // FIX ME
+                  imageUrl: 'assets/images/board-2022/bear.png' // FIX ME
                 }
             }
         ),
@@ -85,9 +85,9 @@ class BioSet {
                 title: 'Projects Chair',
                 links: {
                   mailToUrl: 'mailto:bhlee@ucsd.edu',
-                  linkedinUrl: 'https://www.linkedin.com/in/gabriel-diaz-57815118b/',
+                  linkedinUrl: 'https://www.linkedin.com/in/cses-ucsd-809737190/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/bear.jpeg' //FIX ME
+                  imageUrl: 'assets/images/board-2022/bear.png' //FIX ME
                 }
             }
         ),
