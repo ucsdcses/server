@@ -147,7 +147,7 @@ class BioSet {
                   mailToUrl: 'mailto:nkhoury@ucsd.edu',
                   linkedinUrl: 'https://www.linkedin.com/in/nabil-khoury-5b49a2220/',
                   githubUrl: 'https://github.com/ucsdcses/',
-                  imageUrl: 'assets/images/board-2022/Nabil.jpg'
+                  imageUrl: 'assets/images/board-2022/Nabil.png'
                 }
             }
         ),
