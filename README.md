@@ -48,6 +48,11 @@ system
 - If you need access to the physical machine, email mbland@ucsd.edu for keycard
 access
 
+### Troubleshooting
+- `pm2 list` and `pm2 logs` is a good place to start your troubleshooting. It will give you a good idea what is wrong.
+- It's also a good idea to test it out locally first to make sure everything does work
+- Sometime pm2 will just error out a server. Make sure you do `pm2 stop server` and start the server under the `server_dist` directory. To start the server, simply do `pm2 start server.js`
+
 ## Testing
 
 Due to the scale of this project, we adopt a lax testing structure. CircleCI has
